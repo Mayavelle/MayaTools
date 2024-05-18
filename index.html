@@ -1,262 +1,322 @@
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Retah Gaming</title>
-<link rel="stylesheet" type="text/css" href="rg.css?version=12">
-<script src="rg.JS?version=10" type="text/javascript"></script>
-<style>
-#changelog table,tr,td {color: #cccccc;border: none;vertical-align: top;}
-#changelog td:nth-child(1) {padding-right: 10px;}
-</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Retah Gaming</title>
+	<link rel="stylesheet" type="text/css" href="rg.css?version=12">
+	<script src="rg.JS?version=10" type="text/javascript"></script>
+	<script src="jquery-3.7.1.min.js" type="text/javascript"></script>
+	<style>
+		#changelog table,
+		tr,
+		td {
+			color: #cccccc;
+			border: none;
+			vertical-align: top;
+		}
+
+		#changelog td:nth-child(1) {
+			padding-right: 10px;
+		}
+	</style>
 </head>
+
+
 <body>
-<?php include 'topnav.html';?>
-<div id="rgcontent">
-<h2>Contact</h2>
-<p>Have questions, comments, suggestions, corrections, ect? Post on the discord at <a href="https://discord.gg/aT3DkDn7FM"></a></p>
-<br>
-<h2>Change Log</h2>
-<table id="changelog">
-	<tr>
-		<td>2024-5-18/A</td>
-		<td>Website reconstruction began.</td>
-	</tr>
-	<tr>
-		<td>Late 2022</td>
-		<td>Retah Gaming Deleted</td>
-	</tr>
-	<tr>
-		<td>22/Dec/2021</td>
-		<td>Crafting and Gathering sections have been updated.  Melds and other information has been added.  More information coming later.  Aesthetics updated somewhat.</td>
-	</tr>
-	<tr>
-		<td>17/Dec/2021</td>
-		<td>The Hunt Train Tool has now been updated to cover Endwalker Hunt Trains.</td>
-	</tr>
-	<tr>
-		<td>13/Dec/2021</td>
-		<td>Crafting and Gathering sections have been updated for Patch 6.0</td>
-	</tr>
-	<tr>
-		<td>12/Dec/2021</td>
-		<td>S Rank and SS Rank locations for Ultima Thule added.  Locations for the Daivadipa and Chi world boss fates have been added to Thavnair and Ultima Thule.  Zoom feature added to Hunt Maps and Treasure Maps.</td>
-	</tr>
-	<tr>
-		<td>10/Dec/2021/B</td>
-		<td>Navbar updated</td>
-	</tr>
-	<tr>
-		<td>10/Dec/2021/A</td>
-		<td>Full Maps for all currently available hunts have been added, EXCEPT the Zone 6 S Rank and Zone 6 SS Rank locations, which are still unknown.</td>
-	</tr>
-	<tr>
-		<td>8/Dec/2021</td>
-		<td>Preliminary Endwalker Hunt Maps have been added.</td>
-	</tr>
-	<tr>
-		<td>12/Nov/2021</td>
-		<td>The framework for Hunt Maps and Treasure Maps has been updated for Endwalker.  Map size has been reduced to allow visibility of the entire map without scrolling at normal (100%) zoom.</td>
-	</tr>
-	<tr>
-		<td>15/Jun/2021</td>
-		<td>Hunt Train Tool update 1: "Load" has been removed and "Share" has been updated to generate sharable links, instead of sharable codes. The sharable links will auto load maps.
-	</tr>
-	<tr>
-		<td>7/Jun/2021</td>
-		<td>Fragment section of Bozja page updated to include fragments added with the release of Zadnor.
-	</tr>
-	<tr>
-		<td>5/Jun/2021/td>
-		<td>Zadnor Map added to the Bozja page.
-	</tr>
-	<tr>
-		<td>3/Jun/2021</td>
-		<td>Hunt Train Tool added.  This update is still in beta and more functions are planned.  Please visit the Retah Gaming discord if you encounter any issues with the tool.</td>
-	</tr>
-	<tr>
-		<td>17/May/2021</td>
-		<td>Workshop update: Patch 5.5 submersible sectors added.</td>
-	</tr>
-	<tr>
-		<td>12/Feb/2021</td>
-		<td>Treasure Map update: Gliderskin/G11 map images added to Shadowbringers zones.  Due to significant overlap in Lakeland, two toggles for Gliderskin/G11 images are included.</td>
-	</tr>
-	<tr>
-		<td>8/Feb/2021/B</td>
-		<td>Bugfixes for Crafting and Gathering pages.</td>
-	</tr>
-	<tr>
-		<td>8/Feb/2021/A</td>
-		<td>Added Gathering section under FFXIV dropdown.  Endgame Macros, Melds, Diadem breakpoints, and Star Material gathering are included.</td>
-	</tr>
-	<tr>
-		<td>7/Feb/2021</td>
-		<td>Added list of Lost Actions and Forgotten Fragments to the Bozja page.</td>
-	</tr>
-	<tr>
-		<td>3/Feb/2021/B</td>
-		<td>Blue Mage update: Details column is complete.
-	<tr>
-		<td>3/Feb/2021/A</td>
-		<td>Updated Blue Mage spell list for Patch 5.45.  Details column is incomplete.  Further update to come.</td>
-	</tr>
-	<tr>
-		<td>24/Jan/2021</td>
-		<td>Hunt Macros section: corrections and additions for Hunt Train macros.
-	</tr>
-	<tr>
-		<td>14/Jan/2021</td>
-		<td>Grade 4 Diadem update: Artisanal Fish added.</td>
-	</tr>
-	<tr>
-		<td>12/Jan/2021/B</td>
-		<td>Grade 4 Diadem update: Info panel for level 80 mob drops added.</td>
-	</tr>
-	<tr>
-		<td>12/Jan/2021/A</td>
-		<td>Support for Grade 4 Diadem added.  MIN/BOT clouded material locations added.  Updates will be rolled out periodically.</td>
-	</tr>
-	<tr>
-		<td>4/Jan/2021</td>
-		<td>Corrected typing errors in the FFXIV Crafting section.</td>
-	</tr>
-	<tr>
-		<td>2/Jan/2021</td>
-		<td>Added a FFXIV Crafting section.  Currently includes rotations for crafting in Patch 5.4</td>
-	</tr>
-	<tr>
-		<td>1/Nov/2020/B</td>
-		<td>Added Mrhappy1227's "What is The Hunt" video to the Hunt Videos section.  Big thanks to him for allowing that addition!  Aesthetic changes for the Hunt Macros and Hunt Videos sections.</td>
-	</tr>
-	<tr>
-		<td>1/Nov/2020/A</td>
-		<td>Bug fixed: Incorrect title displayed on browser tab for the Bozja Map.  This has been replaced with the correct title.</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Bug fixed: Navbar dropdown menus were closing prematurely in specific circumstances, preventing access to lower dropdown items.  The dropdown menu will no longer close prematurely.</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Bug fixed: Treasure Map tool placing Timeworn Thief Map locations in The Friges and The Peaks where no thief map exists.  No image files exist for thief maps in those zones, thus the tool could not display locations for them and instead displayed a no image found icon.  The tool will no longer attempt to display thief map locations in either of those zones.</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Bug fixed: An aesthetic issue where the "Min/Bot" toggle in the Diadem Map incorrectly displayed in the disabled state initially, where it was actually enabled.  The toggle has been corrected to properly display as enabled.</td>
-	</tr>
-	<tr>
-		<td>31/Oct/2020</td>
-		<td>Map of the Bozjan Southern Front added.</td>
-	</tr>
-	<tr>
-		<td>30/Oct/2020</td>
-		<td>Server side update.  HTML converted to PHP.</td>
-	</tr>
-	<tr>
-		<td>12/Sept/2020</td>
-		<td>G3 Diadem Map update.  Information for mod drops added.  Only level 80 drop table included.  10 and 60 drop tables will be added later.</td>
-	</tr>
-	<tr>
-		<td>11/Sept/2020</td>
-		<td>G3 Diadem Map update.  Now has information for mining/botany timed nodes and breakpoints.</td>
-	</tr>
-	<tr>
-		<td>10/Sept/2020</td>
-		<td>Grade 3 Diadem Map work in progress added.  Artisanal fish are included.</td>
-	</tr>
-	<tr>
-		<td>20/Aug/2020</td>
-		<td>Sea of Jade 2 added to Workshop section.  Unlock for Sea of Ash corrected, was "Sunken Temple", now "Sunken Vault".</td>
-	</tr>
-	<tr>
-		<td>15/Aug/2020/B</td>
-		<td>Tangaroa's Prow added to Workshop section.</td>
-	</tr>
-	<tr>
-		<td>15/Aug/2020/A</td>
-		<td>Rogo-Tumu-Here's Haunt, The Stone Barbs, and Rogo-Tumu-Here's Repose added to the Workshop section.</td>
-	</tr>
-	<tr>
-		<td>13/Aug/2020</td>
-		<td>The Kraken's Tomb and Sea of Jade 1 added to the Workshop section.</td>
-	</tr>
-	<tr>
-		<td>11/Aug/2020</td>
-		<td>Sea of Jade Nautical Map and The Isle of Sacrament added to the Workshop section.</td>
-	</tr>
-	<tr>
-		<td>10/Aug/2020</td>
-		<td>Treasure Maps updated to include images for G12/Zonureskin maps.  Toggles for corresponded maps are updated.</td>
-	</tr>
-	<tr>
-		<td>29/Jul/2020</td>
-		<td>Extra map page added for Forgiven Rebellion and Gossips.  It can be accessed in the Hunt Map page then selecting the Shadowbringers/5.0 dropdown.</td>
-	</tr>
-	<tr>
-		<td>28/Jul/2020</td>
-		<td>Treasure Map section formally added.  Old Zonureskin map page is still available for those that prefer it; moved to a dropdown item under Shadowbringers in the Treasure Maps page.  ARR Treasure Maps do not have a toggle, those are still a work in progress.</td>
-	</tr>
-	<tr>
-		<td>17/Jun/2020</td>
-		<td>Hunt Map controls updated.  If you experience any issues with the Hunt Maps, please clear your cache for this website or right click the hunt map and select "Reload Frame".  If the issue persists, please contact me via the contact section above.</td>
-	</tr>
-	<tr>
-		<td>27/Mar/2020</td>
-		<td>Blue Mage, Workshop, and Diadem Map sections added.</td>
-	</tr>
-	<tr>
-		<td>5/Jan/2020</td>
-		<td>Treasure Maps section added.  Only Timeworn Zonureskin Maps are included for now.  Other map types will be added later.  Topnav changed to use dropdowns.</td>		
-	</tr>
-	<tr>
-		<td>31/Dec/2019/B</td>
-		<td>Hunt Maps controls updated.</td>
-	</tr>
-	<tr>
-		<td>31/Dec/2019/A</td>
-		<td>Requested Hunt Routes section added.  Contact information added on home page.</td>
-	</tr>
-	<tr>
-		<td>20/Dec/2019</td>
-		<td>Hunt Marks page updated.  Full site centered.</td>
-	</tr>
-	<tr>
-		<td>1/Dec/2019</td>
-		<td>Missing spawn point for Lower La Noscea added at 20x,32y.</td>
-	</tr>
-	<tr>
-		<td>4/Aug/2019</td>
-		<td>TopNav replaced.  Minor updates.</td>
-	</tr>
-	<tr>
-		<td>1/Aug/2019</td>
-		<td>Retah Gaming banner replaced by home menu button.  Hunt Marks section updated with information for Tyger, Forgiven Pedantry, and Tarchia.  Spawn points for Tyger, Forgiven Pedantry, and Tarchia added, but not finallized.</td>
-	</tr>
-	<tr>
-		<td>17/Jul/2019</td>
-		<td>Hunt Marks section updated to include information on all available 5.0 marks.  S Rank spawn conditions are now separated from the hunter scholar descriptions.</td>
-	</tr>
-	<tr>
-		<td>16/Jul/2019</td>
-		<td>Full Maps for 5.0 zones added.  Zones which have hunt marks not yet implimented are missing such marks.</td>
-	</tr>
-	<tr>
-		<td>1/Jul/2019</td>
-		<td>Hunt Maps for 5.0 zones are in the works.  See Hunt Maps section for more details.</td>
-	</tr>
-	<tr>
-		<td>23/Apr/2019</td>
-		<td>Complete Hunt Marks and Hunt Macros sections.</td>
-	</tr>
-	<tr>
-		<td>17/Apr/2019</td>
-		<td>Fix: Corrected the info overlay for Middle La Noscea.  The S Rank Spawn condition stated both incorrect time and slot number for Grade 3 La Noscean Topsoil and will now display the correct information.</td>
-	</tr>
-	<tr>
-		<td>11/Apr/2019</td>
-		<td>Completed: Add toogleable Info option to all FFXIV Hunt Maps.</td>
-	</tr>
-</table>
-</div>
+	<div id="topnav">
+		<script>
+			$().ready(function () {
+				var url = 'topnav.html';
+
+				$.get(url, function (data) {
+					// can use 'data' in here...
+				});
+			});
+		</script>
+	</div>
+	<div id="rgcontent">
+		<h2>Contact</h2>
+		<p>Have questions, comments, suggestions, corrections, ect? Post on the discord at <a
+				href="https://discord.gg/aT3DkDn7FM"></a></p>
+		<br>
+		<h2>Change Log</h2>
+		<table id="changelog">
+			<tr>
+				<td>2024-5-18/A</td>
+				<td>Website reconstruction began.</td>
+			</tr>
+			<tr>
+				<td>Late 2022</td>
+				<td>Retah Gaming Deleted</td>
+			</tr>
+			<tr>
+				<td>22/Dec/2021</td>
+				<td>Crafting and Gathering sections have been updated. Melds and other information has been added. More
+					information coming later. Aesthetics updated somewhat.</td>
+			</tr>
+			<tr>
+				<td>17/Dec/2021</td>
+				<td>The Hunt Train Tool has now been updated to cover Endwalker Hunt Trains.</td>
+			</tr>
+			<tr>
+				<td>13/Dec/2021</td>
+				<td>Crafting and Gathering sections have been updated for Patch 6.0</td>
+			</tr>
+			<tr>
+				<td>12/Dec/2021</td>
+				<td>S Rank and SS Rank locations for Ultima Thule added. Locations for the Daivadipa and Chi world boss
+					fates have been added to Thavnair and Ultima Thule. Zoom feature added to Hunt Maps and Treasure
+					Maps.</td>
+			</tr>
+			<tr>
+				<td>10/Dec/2021/B</td>
+				<td>Navbar updated</td>
+			</tr>
+			<tr>
+				<td>10/Dec/2021/A</td>
+				<td>Full Maps for all currently available hunts have been added, EXCEPT the Zone 6 S Rank and Zone 6 SS
+					Rank locations, which are still unknown.</td>
+			</tr>
+			<tr>
+				<td>8/Dec/2021</td>
+				<td>Preliminary Endwalker Hunt Maps have been added.</td>
+			</tr>
+			<tr>
+				<td>12/Nov/2021</td>
+				<td>The framework for Hunt Maps and Treasure Maps has been updated for Endwalker. Map size has been
+					reduced to allow visibility of the entire map without scrolling at normal (100%) zoom.</td>
+			</tr>
+			<tr>
+				<td>15/Jun/2021</td>
+				<td>Hunt Train Tool update 1: "Load" has been removed and "Share" has been updated to generate sharable
+					links, instead of sharable codes. The sharable links will auto load maps.
+			</tr>
+			<tr>
+				<td>7/Jun/2021</td>
+				<td>Fragment section of Bozja page updated to include fragments added with the release of Zadnor.
+			</tr>
+			<tr>
+				<td>5/Jun/2021/td>
+				<td>Zadnor Map added to the Bozja page.
+			</tr>
+			<tr>
+				<td>3/Jun/2021</td>
+				<td>Hunt Train Tool added. This update is still in beta and more functions are planned. Please visit the
+					Retah Gaming discord if you encounter any issues with the tool.</td>
+			</tr>
+			<tr>
+				<td>17/May/2021</td>
+				<td>Workshop update: Patch 5.5 submersible sectors added.</td>
+			</tr>
+			<tr>
+				<td>12/Feb/2021</td>
+				<td>Treasure Map update: Gliderskin/G11 map images added to Shadowbringers zones. Due to significant
+					overlap in Lakeland, two toggles for Gliderskin/G11 images are included.</td>
+			</tr>
+			<tr>
+				<td>8/Feb/2021/B</td>
+				<td>Bugfixes for Crafting and Gathering pages.</td>
+			</tr>
+			<tr>
+				<td>8/Feb/2021/A</td>
+				<td>Added Gathering section under FFXIV dropdown. Endgame Macros, Melds, Diadem breakpoints, and Star
+					Material gathering are included.</td>
+			</tr>
+			<tr>
+				<td>7/Feb/2021</td>
+				<td>Added list of Lost Actions and Forgotten Fragments to the Bozja page.</td>
+			</tr>
+			<tr>
+				<td>3/Feb/2021/B</td>
+				<td>Blue Mage update: Details column is complete.
+			<tr>
+				<td>3/Feb/2021/A</td>
+				<td>Updated Blue Mage spell list for Patch 5.45. Details column is incomplete. Further update to come.
+				</td>
+			</tr>
+			<tr>
+				<td>24/Jan/2021</td>
+				<td>Hunt Macros section: corrections and additions for Hunt Train macros.
+			</tr>
+			<tr>
+				<td>14/Jan/2021</td>
+				<td>Grade 4 Diadem update: Artisanal Fish added.</td>
+			</tr>
+			<tr>
+				<td>12/Jan/2021/B</td>
+				<td>Grade 4 Diadem update: Info panel for level 80 mob drops added.</td>
+			</tr>
+			<tr>
+				<td>12/Jan/2021/A</td>
+				<td>Support for Grade 4 Diadem added. MIN/BOT clouded material locations added. Updates will be rolled
+					out periodically.</td>
+			</tr>
+			<tr>
+				<td>4/Jan/2021</td>
+				<td>Corrected typing errors in the FFXIV Crafting section.</td>
+			</tr>
+			<tr>
+				<td>2/Jan/2021</td>
+				<td>Added a FFXIV Crafting section. Currently includes rotations for crafting in Patch 5.4</td>
+			</tr>
+			<tr>
+				<td>1/Nov/2020/B</td>
+				<td>Added Mrhappy1227's "What is The Hunt" video to the Hunt Videos section. Big thanks to him for
+					allowing that addition! Aesthetic changes for the Hunt Macros and Hunt Videos sections.</td>
+			</tr>
+			<tr>
+				<td>1/Nov/2020/A</td>
+				<td>Bug fixed: Incorrect title displayed on browser tab for the Bozja Map. This has been replaced with
+					the correct title.</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Bug fixed: Navbar dropdown menus were closing prematurely in specific circumstances, preventing
+					access to lower dropdown items. The dropdown menu will no longer close prematurely.</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Bug fixed: Treasure Map tool placing Timeworn Thief Map locations in The Friges and The Peaks where
+					no thief map exists. No image files exist for thief maps in those zones, thus the tool could not
+					display locations for them and instead displayed a no image found icon. The tool will no longer
+					attempt to display thief map locations in either of those zones.</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Bug fixed: An aesthetic issue where the "Min/Bot" toggle in the Diadem Map incorrectly displayed in
+					the disabled state initially, where it was actually enabled. The toggle has been corrected to
+					properly display as enabled.</td>
+			</tr>
+			<tr>
+				<td>31/Oct/2020</td>
+				<td>Map of the Bozjan Southern Front added.</td>
+			</tr>
+			<tr>
+				<td>30/Oct/2020</td>
+				<td>Server side update. HTML converted to PHP.</td>
+			</tr>
+			<tr>
+				<td>12/Sept/2020</td>
+				<td>G3 Diadem Map update. Information for mod drops added. Only level 80 drop table included. 10 and 60
+					drop tables will be added later.</td>
+			</tr>
+			<tr>
+				<td>11/Sept/2020</td>
+				<td>G3 Diadem Map update. Now has information for mining/botany timed nodes and breakpoints.</td>
+			</tr>
+			<tr>
+				<td>10/Sept/2020</td>
+				<td>Grade 3 Diadem Map work in progress added. Artisanal fish are included.</td>
+			</tr>
+			<tr>
+				<td>20/Aug/2020</td>
+				<td>Sea of Jade 2 added to Workshop section. Unlock for Sea of Ash corrected, was "Sunken Temple", now
+					"Sunken Vault".</td>
+			</tr>
+			<tr>
+				<td>15/Aug/2020/B</td>
+				<td>Tangaroa's Prow added to Workshop section.</td>
+			</tr>
+			<tr>
+				<td>15/Aug/2020/A</td>
+				<td>Rogo-Tumu-Here's Haunt, The Stone Barbs, and Rogo-Tumu-Here's Repose added to the Workshop section.
+				</td>
+			</tr>
+			<tr>
+				<td>13/Aug/2020</td>
+				<td>The Kraken's Tomb and Sea of Jade 1 added to the Workshop section.</td>
+			</tr>
+			<tr>
+				<td>11/Aug/2020</td>
+				<td>Sea of Jade Nautical Map and The Isle of Sacrament added to the Workshop section.</td>
+			</tr>
+			<tr>
+				<td>10/Aug/2020</td>
+				<td>Treasure Maps updated to include images for G12/Zonureskin maps. Toggles for corresponded maps are
+					updated.</td>
+			</tr>
+			<tr>
+				<td>29/Jul/2020</td>
+				<td>Extra map page added for Forgiven Rebellion and Gossips. It can be accessed in the Hunt Map page
+					then selecting the Shadowbringers/5.0 dropdown.</td>
+			</tr>
+			<tr>
+				<td>28/Jul/2020</td>
+				<td>Treasure Map section formally added. Old Zonureskin map page is still available for those that
+					prefer it; moved to a dropdown item under Shadowbringers in the Treasure Maps page. ARR Treasure
+					Maps do not have a toggle, those are still a work in progress.</td>
+			</tr>
+			<tr>
+				<td>17/Jun/2020</td>
+				<td>Hunt Map controls updated. If you experience any issues with the Hunt Maps, please clear your cache
+					for this website or right click the hunt map and select "Reload Frame". If the issue persists,
+					please contact me via the contact section above.</td>
+			</tr>
+			<tr>
+				<td>27/Mar/2020</td>
+				<td>Blue Mage, Workshop, and Diadem Map sections added.</td>
+			</tr>
+			<tr>
+				<td>5/Jan/2020</td>
+				<td>Treasure Maps section added. Only Timeworn Zonureskin Maps are included for now. Other map types
+					will be added later. Topnav changed to use dropdowns.</td>
+			</tr>
+			<tr>
+				<td>31/Dec/2019/B</td>
+				<td>Hunt Maps controls updated.</td>
+			</tr>
+			<tr>
+				<td>31/Dec/2019/A</td>
+				<td>Requested Hunt Routes section added. Contact information added on home page.</td>
+			</tr>
+			<tr>
+				<td>20/Dec/2019</td>
+				<td>Hunt Marks page updated. Full site centered.</td>
+			</tr>
+			<tr>
+				<td>1/Dec/2019</td>
+				<td>Missing spawn point for Lower La Noscea added at 20x,32y.</td>
+			</tr>
+			<tr>
+				<td>4/Aug/2019</td>
+				<td>TopNav replaced. Minor updates.</td>
+			</tr>
+			<tr>
+				<td>1/Aug/2019</td>
+				<td>Retah Gaming banner replaced by home menu button. Hunt Marks section updated with information for
+					Tyger, Forgiven Pedantry, and Tarchia. Spawn points for Tyger, Forgiven Pedantry, and Tarchia added,
+					but not finallized.</td>
+			</tr>
+			<tr>
+				<td>17/Jul/2019</td>
+				<td>Hunt Marks section updated to include information on all available 5.0 marks. S Rank spawn
+					conditions are now separated from the hunter scholar descriptions.</td>
+			</tr>
+			<tr>
+				<td>16/Jul/2019</td>
+				<td>Full Maps for 5.0 zones added. Zones which have hunt marks not yet implimented are missing such
+					marks.</td>
+			</tr>
+			<tr>
+				<td>1/Jul/2019</td>
+				<td>Hunt Maps for 5.0 zones are in the works. See Hunt Maps section for more details.</td>
+			</tr>
+			<tr>
+				<td>23/Apr/2019</td>
+				<td>Complete Hunt Marks and Hunt Macros sections.</td>
+			</tr>
+			<tr>
+				<td>17/Apr/2019</td>
+				<td>Fix: Corrected the info overlay for Middle La Noscea. The S Rank Spawn condition stated both
+					incorrect time and slot number for Grade 3 La Noscean Topsoil and will now display the correct
+					information.</td>
+			</tr>
+			<tr>
+				<td>11/Apr/2019</td>
+				<td>Completed: Add toogleable Info option to all FFXIV Hunt Maps.</td>
+			</tr>
+		</table>
+	</div>
 </body>
-</html>	
+
+</html>

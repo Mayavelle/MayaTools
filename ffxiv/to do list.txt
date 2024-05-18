@@ -1,0 +1,7 @@
+To do list Priority
+
+1	Add tabs
+2	Add secondary toggle for spots where some hunts don't spawn (ie: Nuckelavee)
+3	Add tracking for which hunt is marked.
+4	Add macro export for discord
+5	Add link code functionality

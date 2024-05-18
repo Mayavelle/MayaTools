@@ -1,0 +1,26 @@
+<html>
+<head>
+<style>
+img,body {
+  padding: 0;
+}
+ #overlay{
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  width: 1024px;
+}
+</style>
+</head>
+<body>
+<img id="overlay" src="images/arr/sss.png">
+<img src="images/arr/ss.jpg">
+</body>
+<script>
+function printMousePos(event) {
+  //console.log("top: " + event.clientY + " - left: " + event.clientX);
+  console.log("{ top: min(" + event.clientY + "px,); left: min(" + event.clientX + "px,); }");
+}
+document.addEventListener("click", printMousePos);
+</script>
+</html>

@@ -1,0 +1,366 @@
+a.ddarr {font-weight:bold;}
+
+br.mapbr {line-height: 5px}
+
+.xpacname {display: block;}
+.xpacnum {display: none;}
+.marksfull, .marksshort {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.marksfull {display: block;}
+.marksshort {display: none;}
+.mapimg {padding-top: 5px;}
+.mapdiv,#mapframe {
+  width: 1024px;
+  display: block;
+  z-index: 0;
+  padding-top: 5px;
+}
+.mapdiv {
+  position: absolute;
+}
+#mapframe {
+  margin: auto;
+  height: 1200px;
+  border: none;
+}
+#diademgrade2,#diademgrade3 {display:none;}
+#diademgrade4 {display:block;}
+
+
+
+/* Dropdown */
+#dropdownmenu {
+  max-width: 100%;
+  width: 1024px;
+  text-align: center;
+}
+#dropbtn {
+  background-color: #202225;
+  color: #ccc;
+  padding: 15px 15px;
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  min-width: 90px;
+  border: solid 1px #ccc;
+  outline: none;
+  cursor: pointer;
+}
+#zoombtn {
+  background-color: #202225;
+  color: #ccc;
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  border: solid 1px #ccc;
+  outline: none;
+  cursor: pointer;  
+}
+#zoombtn2 {
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+}
+#dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+@media screen and (max-width: 1023px) {
+  .xpacname {display: none;}
+  .xpacnum {display: block;}
+  #dropdownzoom,
+  #dropdownarr,
+  #dropdownlano,
+  #dropdownblsh,
+  #dropdownthan {width: 436px;}
+  #dropdownhw {width: 436px;left: -116px;}
+  #dropdownsb {width: 436px;left: -226px;}
+  #dropdownsh {width: 436px;left: -330px;}
+  #dropdownend {width: 436px;left: -330px;}
+  .mapdiv, #mapframe {width: 100%;}
+  #dropbtn {
+    padding:  15px 4px 15px 4px;
+  }
+}
+@media screen and (max-width: 548px) {
+  .marksfull {display: none;}
+  .marksshort {display: block;}
+  #mapframe {width: 100%;}
+  #dropbtn {
+    font-size: 18px;
+    min-width: 50px;
+    padding: 8px 4px 8px 4px;
+  }
+  #zoombtn {
+    font-size: 18px;
+    min-width: 50px;
+    padding: 0px;
+    height: 43px;
+    width: 53px;
+  }
+  
+}
+
+/*Expansion Dropdowns*/
+#dropdownzoom,#dropdownzone,#dropdownarr,#dropdownhw,#dropdownsb,#dropdownsh,#dropdownend {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background-color: #36393f;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+  cursor: pointer;
+}
+/*ARR Zone Dropdowns*/
+#dropdownlano,#dropdownblsh,#dropdownthan {
+  display: none;
+  position: relative;
+  left: -2px;
+  background-color: #40444b;
+  min-width: 408px;
+  z-index: 100;
+}
+/*Expansion Widths*/
+#dropdownzone {min-width: 408px;}
+#dropdownarr {min-width: 408px;}
+#dropdownhw {min-width: 420px;}
+#dropdownsb {min-width: 280px;}
+#dropdownsh {min-width: 360px;}
+#dropdownend {min-width: 360px;left:-201px}
+
+#dropdownzoom a,
+#dropdownzone a,
+#dropdownarr a,
+#dropdownhw a,
+#dropdownsb a,
+#dropdownsh a,
+#dropdownend a {
+   color: #ccc;
+   font-family: "Segoe UI",Arial,sans-serif;
+   font-size: 22px;
+   padding: 12px 30px;
+   text-decoration: none;
+   display: block;
+}
+
+/* Map Buttons */
+#mapbuttons,
+.mapbuttons {text-align:center;}
+.diadembuttons {text-align:center;padding-bottom: 10px;}
+
+/*Identical Button Styles*/
+#buttoni,.buttoni,
+#buttontmi,.buttontmi,
+#buttonss,.buttonss,
+#buttont,.buttont,
+#buttonf,.buttonf,
+#buttons,.buttons,
+#buttontms,.buttontms,
+#buttona1,.buttona1,
+#buttona2,.buttona2,
+#buttonb1,.buttonb1,
+#buttonb2,.buttonb2,
+#buttontma1,.buttontma1,
+#buttontma1_2,.buttontma1_2,
+#diadem1,.diadem1,
+#diadem2,.diadem2,
+#diadem3,.diadem3,
+#diadem4,.diadem4,
+.bozja1, .zadnor1,
+.bozja2, .zadnor2,
+.bozja3, .zadnor3,
+.bozja4, .zadnor4,
+.bozja5, .zadnor5,
+.bozja6, .zadnor6,
+.bozja7, .zadnor7,
+.bozja8, .zadnor8,
+.bozja9, .zadnor9,
+.bozja10, .zadnor10  {
+  font-size: 18px; 
+  font-family: "Segoe UI",Arial,sans-serif;
+  color: #ccc;
+  outline: none;
+  padding: 5px 16px;
+  background-color: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+#buttoni,.buttoni {border: solid 0.5px #ffffff;}
+#buttontmi,.buttontmi {border: solid 0.5px #666666;}
+#buttonss,.buttonss {border: solid 0.5px #990000;}
+#buttonf,.buttonf {border: solid 0.5px #e2b9f5;}
+#buttont,.buttont {border: solid 0.5px #00ff00;}
+#buttons,.buttons {border: solid 0.5px #ff3333;}
+#buttontms,.buttontms {border: solid 0.5px #ff3333;}
+#buttona1,.buttona1 {border: solid 0.5px #6666ff;}
+#buttontma1,.buttontma1,
+#buttontma1_2,.buttontma1_2 {border: solid 0.5px #666666;}
+#buttona2,.buttona2 {border: solid 0.5px #00ffff;}
+#buttonb1,.buttonb1 {border: solid 0.5px #eeee00;}
+#buttonb2,.buttonb2 {border: solid 0.5px #ff00ff;}
+#diademg2,#diademg3,#diademg4  {
+  font-size: 32px; 
+  font-family: "Segoe UI",Arial,sans-serif;
+  color: #ccc;
+  border: solid 0.5px #666;
+  outline: none;
+  padding: 5px 16px;
+  background-color: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+/*Border Color #ccc*/
+#diadem1,.diadem1,
+#diadem2,.diadem2,
+#diadem3,.diadem3,
+#diadem4,.diadem4,
+.bozja1, .zadnor1,
+.bozja2, .zadnor2,
+.bozja3, .zadnor3,
+.bozja4, .zadnor4,
+.bozja5, .zadnor5,
+.bozja6, .zadnor6,
+.bozja7, .zadnor7,
+.bozja8, .zadnor8,
+.bozja9, .zadnor9,
+.bozja10, .zadnor10  {border: solid 0.5px #ccc;}
+
+/*Hover BG:#ddd Text:black*/
+#dropdownzoom a:hover,
+#dropdownzone a:hover,
+#dropdownarr a:hover,
+#dropdownhw a:hover,
+#dropdownsb a:hover,
+#dropdownsh a:hover,
+#dropdownend a:hover {background-color: #ddd;color: black;}
+
+/*Hover BG:#555*/
+#dropdown-content a:hover,
+#dropdown:hover #dropbtn,
+#dropdown:hover #zoombtn {background-color: #555}
+
+/*Hover BG:#666*/
+#dropdown:active #dropbtn,
+#dropdown:active #zoombtn {background-color: #666}
+
+/*Hover Text:#fff*/
+#diademg2:hover,#diademg3:hover,#diademg4:hover,
+#diadem1:hover,.diadem1:hover,
+#diadem2:hover,.diadem2:hover,
+#diadem3:hover,.diadem3:hover,
+#diadem4:hover,.diadem4:hover,
+.bozja1:hover, .zadnor1: hover,
+.bozja2:hover, .zadnor2: hover,
+.bozja3:hover, .zadnor3: hover,
+.bozja4:hover, .zadnor4: hover,
+.bozja5:hover, .zadnor5: hover,
+.bozja6:hover, .zadnor6: hover,
+.bozja7:hover, .zadnor7: hover,
+.bozja8:hover, .zadnor8: hover,
+.bozja9:hover, .zadnor9: hover,
+.bozja10:hover, .zadnor10: hover {color: #fff;}
+
+/*Hover BG Different Colors*/
+#buttoni:hover,.buttoni:hover {background-color: #555; color:#fff;}
+#buttonss:hover,.buttonss:hover {background-color: #555; color:#ff5555;}
+#buttonf:hover,.buttonf:hover {background-color: #555; color:#e2b9f5;}
+#buttons:hover,.buttons:hover {background-color: #555; color:#ff7777;}
+#buttona1:hover,.buttona1:hover {background-color: #555; color:#9999ff;}
+#buttona2:hover,.buttona2:hover {background-color: #555; color:#99ffff;}
+#buttonb1:hover,.buttonb1:hover {background-color: #555; color:#eeee99;}
+#buttonb2:hover,.buttonb2:hover {background-color: #555; color:#ff99ff;}
+
+/*Active BG:#666*/
+#buttoni:active,
+#buttonss:active,#buttons:active,#buttonf:active,
+#buttona1:active,#buttona2:active,
+#buttonb1:active,#buttonb2:active,
+#diademg2:active,#diademg3:active,#diademg4:active,
+#diadem1:active,.diadem1:active,
+#diadem2:active,.diadem2:active,
+#diadem3:active,.diadem3:active,
+#diadem4:active,.diadem4:active,
+.bozja1:active, .zadnor1: active,
+.bozja2:active, .zadnor2: active,
+.bozja3:active, .zadnor3: active,
+.bozja4:active, .zadnor4: active,
+.bozja5:active, .zadnor5: active,
+.bozja6:active, .zadnor6: active,
+.bozja7:active, .zadnor7: active,
+.bozja8:active, .zadnor8: active,
+.bozja9:active, .zadnor9: active,
+.bozja10:active, .zadnor10: active {background-color: #666;}
+
+/* Map Images */
+#hunt_map,#hunt_i,
+#hunt_ss,#hunt_t,#hunt_f,#hunt_s,
+#hunt_a1,#hunt_a2,#hunt_b1,#hunt_b2,
+#treasure_s,#treasure_simages,
+#treasure_a1,#treasure_a1images,#treasure_a1images2,
+.diadem_map,.diadem_credits,
+.diadem_info,#diadem_mobs,
+.diadem_minbot,.diadem_fsh,
+#bsf_icons,#zadnor_icons,
+#bsf_fragments,#zadnor_fragments,
+#bsf_skirmishes,#zadnor_skirmishes,
+#bsf_engagements,#zadnor_engagements,
+.bsf_normalmobs, .zadnor_normalmobs,
+.bsf_ashkin, .zadnor_ashkin,
+.bsf_magitek, .zadnor_magitek,
+.bsf_sprites, .zadnor_sprites,
+#bsf_starmobs, #zadnor_starmobs {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  width: 1024px;
+}
+
+#bsf_map, #zadnor_map {
+  position: static;
+  display: block;
+  max-width: 100%;
+  width: 1024px;
+  z-index: 0;
+}
+
+#bsf_mobs, #zadnor_mobs,#bsf_info, #zadnor_info {display:block;}
+
+/*Fate Icon*/
+#fateicon {height: 25px;width: 25px;}
+
+/*Z Indexes*/
+#hunt_map {z-index: 0;}
+#hunt_i {z-index: 22;}
+#hunt_ss {z-index: 20;}
+#hunt_t {z-index: 18;}
+#hunt_f {z-index: 16;}
+#hunt_s {z-index: 14;}
+#hunt_a1 {z-index: 10;}
+#hunt_a2 {z-index: 6;}
+#hunt_b1 {z-index: 4;}
+#hunt_b2 {z-index: 2;}
+#treasure_s {visibility: visible;z-index: 13;}
+#treasure_simages {visibility: visible;z-index: 12;}
+#treasure_a1 {visibility: hidden;z-index: 9;}
+#treasure_a1images,#treasure_a1images2 {visibility: hidden;z-index: 8;}
+.diadem_map {z-index: 0;}
+.diadem_credits {z-index: 7;}
+.diadem_info {z-index: 6;}
+#diadem_mobs {z-index: 5;}
+.diadem_minbot {z-index: 4;}
+.diadem_fsh {z-index: 3;}
+#bsf_icons, #zadnor_icons {z-index: 1;}
+#bsf_fragments, #zadnor_fragments {z-index: 10;}
+#bsf_skirmishes, #zadnor_skirmishes {z-index: 8;}
+#bsf_engagements, #zadnor_engagements {z-index: 7;}
+.bsf_normalmobs, .zadnor_normalmobs {z-index: 3;}
+.bsf_ashkin, .zadnor_ashkin {z-index: 4;}
+.bsf_magitek, .zadnor_magitek {z-index: 2;}
+.bsf_sprites, .zadnor_sprites {z-index: 5;}
+#bsf_starmobs, #zadnor_starmobs {z-index: 6;}

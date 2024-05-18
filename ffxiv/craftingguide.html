@@ -1,0 +1,110 @@
+﻿<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FFXIV Hunt Marks</title>
+<link rel="stylesheet" type="text/css" href="../rg.css?version=3">
+<link rel="stylesheet" type="text/css" href="huntmarks.css?version=1">
+<script src="../rg.JS?version=3" type="text/javascript"></script>
+<script src="craftingguide.JS" type="text/javascript"></script>
+</head>
+<body>
+<div class="topnav" id="rgTopnav">
+	<a class="home" href="../index.html">Home</a>
+	<div class="topnavdropdown">
+		<button class="topnavdropbtn">FFXIV &#x25BE
+		</button>
+		<div class="topnavdropdown-content">
+			<a href="../ffxiv/bluemage.html">Blue Mage</a>
+			<a href="../ffxiv/treasuremaps.html">Treasure Maps</a>
+			<a href="../ffxiv/workshop.html">Workshop</a>
+			<a href="../ffxiv/diademmap.html">Diadem Map</a>
+		</div>
+	</div>
+	<div class="topnavdropdown">
+		<button class="topnavdropbtn">FFXIV Hunt &#x25BE
+		</button>
+		<div class="topnavdropdown-content">
+			<a href="../ffxiv/huntmarks.html">Hunt Marks</a>
+			<a href="../ffxiv/huntmaps.html">Hunt Maps</a>
+			<a href="../ffxiv/huntroutes.html">Hunt Routes</a>
+			<a href="../ffxiv/huntmacros.html">Hunt Macros</a>
+			<a href="../ffxiv/huntvideos.html">Hunt Videos</a>
+		</div>
+	</div>
+	<a href="javascript:void(0);" class="icon" onclick="rgTopnav()">&#9776;</a>
+	<a class="bmcbutton" href="https://www.buymeacoffee.com/retahgaming"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg">Buy me a coffee</a>
+</div>
+<div id="rgcontent">
+<div>
+	<table>
+		<tr>
+			<td><button onclick="ishgardCalc()">Calculate</button></td>
+			<td>Input Level</td>
+			<td>Input EXP</td>
+			<td># (Road)</td>
+			<td>Item</td>
+		</tr>
+		<tr>
+			<td>CRP</td>
+			<td><input class="inputlvl" type="number" id="crplvl" value=""></td>
+			<td><input class="inputexp" type="number" id="crpexp" value=""></td>
+			<td>
+				<div id="crp20"><div id="crpres20"></div> (<div id="crproad20"></div>)</div>
+				<div id="crp40"><div id="crpres40"></div> (<div id="crproad40"></div>) </div>
+				<div id="crp50"><div id="crpres50"></div> (<div id="crproad50"></div>) </div>
+				<div id="crp60"><div id="crpres60"></div> (<div id="crproad60"></div>) </div>
+				<div id="crp70"><div id="crpres70"></div> (<div id="crproad70"></div>) </div>
+			</td>
+			<td>
+				<div id="crp20b">Grade 2 Skybuilders&#39; Plywood</div>
+				<div id="crp40b">Grade 2 Skybuilders&#39; Crate</div>
+				<div id="crp50b">Grade 2 Skybuilders&#39; Crate</div>
+				<div id="crp60b">Grade 2 Skybuilders&#39; Grindstone</div>
+				<div id="crp70b">Grade 2 Skybuilders&#39; Stepladder</div>
+		</tr>
+	</table>
+</div>
+</body>
+<style>
+table {
+width: 100%;
+color: #ccc;
+vertical-align: top;
+border: solid 0.5px #cccccc;
+border-spacing: 0px;
+font-size: 15px;
+}
+td:nth-child(1) {width: 75px;}
+td:nth-child(2) {width: 75px;}
+td:nth-child(3) {width: 75px;}
+td:nth-child(4) {width: 60px;}
+input {
+background-color: #40444b;
+color: #ccc;
+}
+.inputlvl {
+width: 50px;
+}
+.inputexp {width: 75px;}
+#crp20{display:none;}
+#crp40{display:none;}
+#crp50{display:none;}
+#crp60{display:none;}
+#crp70{display:none;}
+#crp20b{display:none;}
+#crp40b{display:none;}
+#crp50b{display:none;}
+#crp60b{display:none;}
+#crp70b{display:none;}
+#crpres20 {display:inline-block;}
+#crpres40 {display:inline-block;}
+#crpres50 {display:inline-block;}
+#crpres60 {display:inline-block;}
+#crpres70 {display:inline-block;}
+#crproad20 {display:inline-block;}
+#crproad40 {display:inline-block;}
+#crproad50 {display:inline-block;}
+#crproad60 {display:inline-block;}
+#crproad70 {display:inline-block;}
+</style>
+</html>

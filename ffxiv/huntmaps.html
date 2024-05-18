@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+		<title>FFXIV Hunt Maps</title>
+		<?php include "../include/rginclude.html";?>
+		<link rel="stylesheet" type="text/css" href="../rg.css?version=16.1">
+		<script src="../rg.JS?version=16.1" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="huntmaps.css?version=18">
+		<script src="huntmaps.JS?version=12" type="text/javascript"></script>
+		<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+		<script src="../jquery-3.7.1.min.js"></script>
+	</head>
+	<body>
+<?php include "../include/topnav.html";?>
+<br>
+<div id="rgcontent">
+<div id="dropdownmenu">
+	<div id="dropdown">
+		<div class="xpacname">
+			<button onclick="zoom_click()" id="zoombtn"><span class="iconify" data-icon="oi:zoom-in"></span>&#x25BE</button>
+		</div>
+		<div class="xpacnum">
+			<button onclick="zoom_click()" id="zoombtn"><span class="iconify" data-icon="oi:zoom-in"></span>&#x25BE</button>
+		</div>
+		<div class="dropdownxpac" id="dropdownzoom">
+			<a onclick="zoom100()">1x</a>
+			<a onclick="zoom075()">0.75x</a>			
+			<a onclick="zoom050()">0.5x</a>
+			<a onclick="zoom025()">0.25x</a>
+		</div>
+	</div>
+	<div id="dropdown">
+		<div class="xpacname">
+			<button onclick="arealmreborn_click()" id="dropbtn">A Realm Reborn&#x25BE</button>
+		</div>
+		<div class="xpacnum">
+			<button onclick="arealmreborn_click()" id="dropbtn">ARR&#x25BE</button>
+		</div>
+		<div class="dropdownxpac" id="dropdownarr">
+			<a class="ddarr" onclick="lanoscea_click()">La Noscea&#x25BE</a>
+			<div id="dropdownlano">
+				<a href="huntmaps/1-middlelanoscea.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspMiddle La Noscea</a>
+				<a href="huntmaps/2-lowerlanoscea.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspLower La Noscea</a>
+				<a href="huntmaps/3-easternlanoscea.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspEastern La Noscea</a>
+				<a href="huntmaps/4-westernlanoscea.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspWestern La Noscea</a>
+				<a href="huntmaps/5-upperlanoscea.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspUpper La Noscea</a>
+				<a href="huntmaps/6-outerlanoscea.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspOuter La Noscea</a>
+			</div>
+			<a class="ddarr" onclick="blackshroud_click()">The Black Shroud&#x25BE</a>
+			<div id="dropdownblsh">
+				<a href="huntmaps/7-centralshroud.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspCentral Shroud</a>
+				<a href="huntmaps/8-eastshroud.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspEast Shroud</a>
+				<a href="huntmaps/9-southshroud.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspSouth Shroud</a>
+				<a href="huntmaps/10-northshroud.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspNorth Shroud</a>
+			</div>
+			<a class="ddarr" onclick="thanalan_click()">Thanalan&#x25BE</a>
+			<div id="dropdownthan">
+				<a href="huntmaps/11-westernthanalan.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspWestern Thanalan</a>
+				<a href="huntmaps/12-centralthanalan.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspCentral Thanalan</a>
+				<a href="huntmaps/13-easternthanalan.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspEastern Thanalan</a>
+				<a href="huntmaps/14-southernthanalan.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspSouthern Thanalan</a>
+				<a href="huntmaps/15-northernthanalan.html" target="mapsframe" onclick="hidemenu()">&nbsp&nbspNorthern Thanalan</a>
+			</div>
+			<a href="huntmaps/16-mordhona.html" target="mapsframe" onclick="hidemenu()">Mor Dhona</a>
+			<a href="huntmaps/17-coerthascentralhighlands.html" target="mapsframe" onclick="hidemenu()">Coerthas Central Highlands</a>
+		</div>
+	</div>
+	<div id="dropdown">
+		<div class="xpacname">
+			<button onclick="heavensward_click()" id="dropbtn">Heavensward&#x25BE</button>
+		</div>
+		<div class="xpacnum">
+			<button onclick="heavensward_click()" id="dropbtn">HW&#x25BE</button>
+		</div>
+		<div class="dropdownxpac" id="dropdownhw">
+			<a href="huntmaps/18-coerthaswesternhighlands.html" target="mapsframe" onclick="hidemenu()">Coerthas Western Highlands</a>
+			<a href="huntmaps/19-theseaofclouds.html" target="mapsframe" onclick="hidemenu()">The Sea of Clouds</a>
+			<a href="huntmaps/20-azyslla.html" target="mapsframe" onclick="hidemenu()">Azys Lla</a>
+			<a href="huntmaps/21-thedravanianforelands.html" target="mapsframe" onclick="hidemenu()">The Dravanian Forelands</a>
+			<a href="huntmaps/22-thedravanianhinterlands.html" target="mapsframe" onclick="hidemenu()">The Dravanian Hinterlands</a>			
+			<a href="huntmaps/23-thechurningmists.html" target="mapsframe" onclick="hidemenu()">The Churning Mists</a>
+		</div>
+	</div>
+	<div id="dropdown">
+		<div class="xpacname">
+			<button onclick="stormblood_click()" id="dropbtn">Stormblood&#x25BE</button>
+		</div>
+		<div class="xpacnum">
+			<button onclick="stormblood_click()" id="dropbtn">StB&#x25BE</button>
+		</div>
+		<div class="dropdownxpac" id="dropdownsb">
+			<a href="huntmaps/24-thefringes.html" target="mapsframe" onclick="hidemenu()">The Fringes</a>
+			<a href="huntmaps/25-thepeaks.html" target="mapsframe" onclick="hidemenu()">The Peaks</a>
+			<a href="huntmaps/26-thelochs.html" target="mapsframe" onclick="hidemenu()">The Lochs</a>
+			<a href="huntmaps/27-therubysea.html" target="mapsframe" onclick="hidemenu()">The Ruby Sea</a>
+			<a href="huntmaps/28-yanxia.html" target="mapsframe" onclick="hidemenu()">Yanxia</a>
+			<a href="huntmaps/29-theazimsteppe.html" target="mapsframe" onclick="hidemenu()">The Azim Steppe</a>
+		</div>
+	</div>
+	<div id="dropdown">
+		<div class="xpacname">
+			<button onclick="shadowbringers_click()" id="dropbtn">Shadowbringers&#x25BE</button>
+		</div>
+		<div class="xpacnum">
+			<button onclick="shadowbringers_click()" id="dropbtn">ShB&#x25BE</button>
+		</div>
+		<div class="dropdownxpac" id="dropdownsh">
+			<a href="huntmaps/30-lakeland.html" target="mapsframe" onclick="hidemenu()">Lakeland</a>
+			<a href="huntmaps/31-kholusia.html" target="mapsframe" onclick="hidemenu()">Kholusia</a>
+			<a href="huntmaps/32-ahmaraeng.html" target="mapsframe" onclick="hidemenu()">Ahm Araeng</a>
+			<a href="huntmaps/33-ilmheg.html" target="mapsframe" onclick="hidemenu()">Il Mheg</a>
+			<a href="huntmaps/34-greatwood.html" target="mapsframe" onclick="hidemenu()">The Rak'tika Greatwood</a>
+			<a href="huntmaps/35-tempest.html" target="mapsframe" onclick="hidemenu()">The Tempest</a>
+		</div>
+	</div>
+	<div id="dropdown">
+		<div class="xpacname">
+			<button onclick="endwalker_click()" id="dropbtn">Endwalker&#x25BE</button>
+		</div>
+		<div class="xpacnum">
+			<button onclick="endwalker_click()" id="dropbtn">END&#x25BE</button>
+		</div>
+		<div class="dropdownxpac" id="dropdownend">
+			<a href="huntmaps/36-labyrinthos.html" target="mapsframe" onclick="hidemenu()">Labyrinthos</a>
+			<a href="huntmaps/37-thavnair.html" target="mapsframe" onclick="hidemenu()">Thavnair</a>
+			<a href="huntmaps/38-garlemald.html" target="mapsframe" onclick="hidemenu()">Garlemald</a>
+			<a href="huntmaps/39-marelamentorum.html" target="mapsframe" onclick="hidemenu()">Mare Lamentorum</a>
+			<a href="huntmaps/40-elpis.html" target="mapsframe" onclick="hidemenu()">Elpis</a>
+			<a href="huntmaps/41-ultimathule.html" target="mapsframe" onclick="hidemenu()">Ultima Thule</a>
+		</div>
+	</div>
+</div>
+<iframe id="mapframe" name="mapsframe" src="huntmaps/36-labyrinthos.html"></iframe>
+</div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FFXIV Bozja</title>
+		<?php include "../include/rginclude.html";?>
+<link rel="stylesheet" type="text/css" href="huntmaps.css?version=9.2">
+<link rel="stylesheet" type="text/css" href="ffxiv.css?version=9.2">
+<script src="huntmaps.JS?version=9.2" type="text/javascript"></script>
+<script src="ffxiv.JS?version=9.2.1" type="text/javascript"></script>
+<style>
+:target::before {
+  content: "";
+  display: block;
+  height: 114px;
+  margin: -114px 0 0;
+}
+</style>
+</head>
+<body>
+<?php include "../include/topnav.html";?>
+<?php
+
+		$databaseHost = 'localhost';
+		$databaseName = 'retaggru_rg';
+		$databaseUsername = 'retaggru_rgdatabasemanager';
+		$databasePassword = 'rxV*8#R98UbJ8t^B9AB$';
+
+		$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
+		if(mysqli_connect_errno()){
+			die("Database connection failed: ".
+			mysqli_connect_error() .
+			" (" . mysqli_connect_errno(). ")"); }
+
+?>
+<div class="sticky2">
+	<table class="header1024">
+		<tr>
+			<td class="header" width="512"><button class="ffxivbtnactive"><a href="#bozja">Bozja SF</a></button></td>
+			<td class="header" width="512"><button class="ffxivbtnactive"><a href="#zadnor">Zadnor</a></button></td>
+			<td class="header" width="512"><button class="ffxivbtnactive"><a href="#fragments">Fragments</a></button></td>
+		</tr>
+	</table>
+</div>
+<div id="rgcontent">
+	<div id="bozja">
+		<br>
+		<div class="mapbuttons">
+			<button onclick="bsffragments()" class="bozja1">Fragments</button>
+			<button onclick="bsfskirmishes()" class="bozja2">Skirmishes</button>
+			<button onclick="bsfengagements()" class="bozja3">Engagements</button>
+			<button onclick="bsfmobs()" class="bozja10">Mobs</button>
+			<br><br>
+			<div class="bsf_mobs">
+				<button onclick="bsfinfo()" class="bozja4">Info</button>			
+				<button onclick="bsfnormalmobs()" class="bozja5">Normal Mobs</button>
+				<button onclick="bsfashkin()" class="bozja6">Ashkin</button>
+				<button onclick="bsfmagitek()" class="bozja7">Magitek</button>
+				<button onclick="bsfsprites()" class="bozja8">Sprites</button>
+				<button onclick="bsfstarmobs()" class="bozja9">Star Mobs</button>
+				<br><br>
+			</div>
+		</div>
+		<div class="bsf_mobs">
+			<img class="bsf_normalmobs" src="images/bozja/bsfnormalmobs.png">
+			<img class="bsf_ashkin" src="images/bozja/bsfashkin.png">
+			<img class="bsf_magitek" src="images/bozja/bsfmagitek.png">
+			<img class="bsf_sprites" src="images/bozja/bsfsprites.png">
+			<img id="bsf_starmobs" src="images/bozja/bsfstarmobs.png">
+			<div id="bsf_info">
+				<img class="bsf_normalmobs" src="images/bozja/bsfnormalmobinfo.png">
+				<img class="bsf_ashkin" src="images/bozja/bsfashkininfo.png">
+				<img class="bsf_magitek" src="images/bozja/bsfmagitekinfo.png">
+				<img class="bsf_sprites" src="images/bozja/bsfspriteinfo.png">
+			</div>
+		</div>
+		<div id="bsf">
+			<img id="bsf_icons" src="images/bozja/bsficons.png">
+			<img id="bsf_fragments" src="images/bozja/bsffragments.png">
+			<img id="bsf_skirmishes" src="images/bozja/bsfskirmishes.png">
+			<img id="bsf_engagements" src="images/bozja/bsfengagements.png">
+			<img id="bsf_map" src="images/bozja/bsfmap.jpg">
+		</div>
+	</div>
+	<div id="zadnor">
+		<br>
+		<div class="mapbuttons">
+			<button onclick="zadnorfragments()" class="zadnor1">Fragments</button>
+			<button onclick="zadnorskirmishes()" class="zadnor2">Skirmishes</button>
+			<button onclick="zadnorengagements()" class="zadnor3">Engagements</button>
+			<button onclick="zadnormobs()" class="zadnor10">Mobs</button>
+			<br><br>
+			<div class="zadnor_mobs">
+				<button onclick="zadnorinfo()" class="zadnor4">Info</button>			
+				<button onclick="zadnornormalmobs()" class="zadnor5">Normal Mobs</button>
+				<button onclick="zadnorashkin()" class="zadnor6">Ashkin</button>
+				<button onclick="zadnormagitek()" class="zadnor7">Magitek</button>
+				<button onclick="zadnorsprites()" class="zadnor8">Sprites</button>
+				<button onclick="zadnorstarmobs()" class="zadnor9">Star Mobs</button>
+				<br><br>
+			</div>
+		</div>
+		<div class="zadnor_mobs">
+			<img class="zadnor_normalmobs" src="images/bozja/zadnormalmobs.png">
+			<img class="zadnor_ashkin" src="images/bozja/zadashkin.png">
+			<img class="zadnor_magitek" src="images/bozja/zadmagitek.png">
+			<img class="zadnor_sprites" src="images/bozja/zadsprites.png">
+			<img id="zadnor_starmobs" src="images/bozja/zadstarmobs.png">
+			<div id="zadnor_info">
+				<img class="zadnor_normalmobs" src="images/bozja/zadnormalmobsinfo.png">
+				<img class="zadnor_ashkin" src="images/bozja/zadashkininfo.png">
+				<img class="zadnor_sprites" src="images/bozja/zadspritesinfo.png">
+			</div>
+		</div>
+		<div id="zadnor">
+			<img id="zadnor_icons" src="images/bozja/zadicons.png">
+			<img id="zadnor_fragments" src="images/bozja/zadfragments.png">
+			<img id="zadnor_skirmishes" src="images/bozja/zadskirmishes.png">
+			<img id="zadnor_engagements" src="images/bozja/zadengagements.png">
+			<img id="zadnor_map" src="images/bozja/zadmap.jpg">
+		</div>
+	</div>
+	<div id="fragments">
+		<br>
+		<table class="tablealt" id="bozjafrags">
+				<tr>
+					<th colspan="2" onclick="sortTable1(1)">Action &#8597</th>
+					<th colspan="2" onclick="sortTable1(3)">Fragment &#8597</th>
+					<th onclick="sortTable2(4)">Rank &#8597</th>
+					<th colspan="2" onclick="sortTable1(5)">Source &#8597</th>
+				</tr>
+
+				<?php
+					$sql = "SELECT actionicons, actions, fragicons, fragments, resistancerank, sourcezone, sourcedrop FROM ffxiv_bozjafrags;";
+					$result = mysqli_query($mysqli, $sql);
+
+					$temp = 0;
+
+					while ($row = mysqli_fetch_assoc($result)) {
+						$bozjafragsArray[$temp][1] = $row['actionicons'];
+						$bozjafragsArray[$temp][2] = $row['actions'];
+						$bozjafragsArray[$temp][3] = $row['fragicons'];
+						$bozjafragsArray[$temp][4] = $row['fragments'];
+						$bozjafragsArray[$temp][5] = $row['resistancerank'];
+						$bozjafragsArray[$temp][6] = $row['sourcezone'];
+						$bozjafragsArray[$temp][7] = $row['sourcedrop'];
+						$temp++;
+					}
+
+					$temp = 0;
+
+					while ($temp <99) {
+						echo "<tr>";
+						echo "<td><img src='images/bozja/lostactions/" . $bozjafragsArray[$temp][1] . "'></td>";
+						echo "<td class='bozjafragstd1'>" . $bozjafragsArray[$temp][2] . "</td>";
+						echo "<td><img src='images/bozja/lostactions/" . $bozjafragsArray[$temp][3] . "'></td>";
+						echo "<td class='bozjafragstd1'>" . $bozjafragsArray[$temp][4] . "</td>";
+						echo "<td class='bozjafragstd1'>" . $bozjafragsArray[$temp][5] . "</td>";
+						echo "<td class='bozjafragstd1'>" . $bozjafragsArray[$temp][6] . "</td>";
+						echo "<td class='bozjafragstd1'>" . $bozjafragsArray[$temp][7] . "</td>";
+						echo "</tr>";
+						$temp++;
+					}
+				?>
+			</table>
+
+	</div>
+</div>
+
+</div>
+</body>
+</html>

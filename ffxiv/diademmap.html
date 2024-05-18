@@ -1,0 +1,73 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FFXIV Diadem Map</title>
+		<?php include "../include/rginclude.html";?>
+<link rel="stylesheet" type="text/css" href="huntmaps.css?version=10">
+<script src="huntmaps.JS?version=10" type="text/javascript"></script>
+</head>
+<body>
+<?php include "../include/topnav.html";?>
+<br>
+<div id="rgcontent">
+	<div class="diadembuttons">
+		<table>
+			<tr>
+				<button onclick="grade2diadem()" id="diademg2">Grade 2</button>
+				<button onclick="grade3diadem()" id="diademg3">Grade 3</button>
+				<button onclick="grade4diadem()" id="diademg4">Grade 4</button>
+			</tr>
+		</table>
+	</div>
+	<div id="diademgrade4">
+		<div class="diadembuttons">
+			<button onclick="diademinfo()" class="diadem1">Info</button>
+			<!--<button onclick="diademmobs()" class="diadem2">Mobs</button>-->
+			<button onclick="diademminbot()" class="diadem3">MIN/BOT</button>
+			<button onclick="diademfsh()" class="diadem4">FSH</button>
+		</div>
+		<div>
+			<img class="diadem_map" src="images/diadem/g3diademmap.png">
+			<img class="diadem_info" src="images/diadem/g4diademinfo.png">
+			<!--<img class="diadem_mobs" src="images/diadem/g4diademmobs.png">-->
+			<img class="diadem_minbot" src="images/diadem/g4diademminbot.png">
+			<img class="diadem_fsh" src="images/diadem/g4diademfsh.png">
+		</div>
+	</div>
+	<div id="diademgrade3">
+		<div class="diadembuttons">
+			<button onclick="diademinfo()" class="diadem1">Info</button>
+			<!--<button onclick="diademmobs()" class="diadem2">Mobs</button>-->
+			<button onclick="diademminbot()" class="diadem3">MIN/BOT</button>
+			<button onclick="diademfsh()" class="diadem4">FSH</button>
+		</div>
+		<div>
+			<img class="diadem_map" src="images/diadem/g3diademmap.png">
+			<!--<img class="diadem_credits" src="images/diadem/g3workinprogress.png">-->
+			<img class="diadem_info" src="images/diadem/g3diademinfo.png">
+			<!--<img class="diadem_mobs" src="images/diadem/g3diademmobs.png">-->
+			<img class="diadem_minbot" src="images/diadem/g3diademminbot.png">
+			<img class="diadem_fsh" src="images/diadem/g3diademfsh.png">
+		</div>
+	</div>
+	<div id="diademgrade2">
+		<div class="diadembuttons">
+			<button onclick="diademinfo()" class="diadem1">Info</button>
+			<button onclick="diademmobs()" id="diadem2">Mobs</button>
+			<button onclick="diademminbot()" class="diadem3">MIN/BOT</button>
+			<button onclick="diademfsh()" class="diadem4">FSH</button>
+		</div>
+		<div>
+			<img class="diadem_map" src="images/diadem/diademmap.png">
+			<img class="diadem_credits" src="images/diadem/diademcredits.png">
+			<img class="diadem_info" src="images/diadem/diademinfo.png">
+			<img id="diadem_mobs" src="images/diadem/diademmobs.png">
+			<img class="diadem_minbot" src="images/diadem/diademminbot.png">
+			<img class="diadem_fsh" src="images/diadem/diademfsh.png">
+		</div>
+	</div>
+</div>
+
+</div>
+</body>
+</html>

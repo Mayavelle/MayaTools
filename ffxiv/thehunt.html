@@ -1,0 +1,2049 @@
+﻿<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FFXIV Hunt Marks</title>
+		<link rel="stylesheet" type="text/css" href="../rg.css?version=10.2">
+		<link rel="stylesheet" type="text/css" href="ffxiv.css?version=10.2">
+		<script src="../rg.JS?version=10" type="text/javascript"></script>
+		<script src="ffxiv.JS?version=10.1" type="text/javascript"></script>
+	</head>
+	<body>
+		<?php include "topnav.html";?>
+		<div id="rgcontent">
+			<div class="sticky3">
+				<div class="huntcnt">
+					<button id="huntcnt1btn" onclick="huntcnt1()" class="ffxivbtnactive">Spawn Conditions</button>
+					<button id="huntcnt2btn" onclick="huntcnt2()" class="ffxivbtn">Hunt Scholar</button>
+					<button id="huntcnt3btn" onclick="huntcnt3()" class="ffxivbtn">Macros</button>
+					<button id="huntcnt4btn" onclick="huntcnt4()" class="ffxivbtn">Videos</button>
+				</div>
+			</div>
+			<div id="huntcnt1">	
+				<table>
+						<tr class="tr0">
+						<th class ="th0" colspan="2">S Rank Spawn Conditions</th>
+					</tr>
+					<tr class="tr1">
+						<th colspan="2">Shadowbringers</th>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Norvrandt</b></td>
+						<td rowspan="2">Kill the four Forgiven Gossip scouts if they spawn after an S Rank is killed.  The scouts cannot be allowed to despawn.  The scouts will despawn if they are reset (such as if a player engages alone and dies).</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Forgiven Rebellion</b></td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Lakeland</b></td>
+						<td rowspan="2">Discard Rail Tenderloins</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Tyger</b></td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Kholusia</b></td>
+						<td rowspan="2">Gather Dwarven Cotton Boll</tr>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Forgiven Pedantry</b></td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Ahm Araeng</b></td>
+						<td rowspan="2">Cast Self Destruct on a spawn point.</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Tarchia</b></td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Il Mheg</b></td>
+						<td rowspan="2">Touch the correct spawn point with the Scarlet Peacock minion.  This can be done while mounted; the minion still counts as summoned even though it disappears while mounted.  This can also be done while flying within range of the spawn point; in general if you are close enough to the ground to aggro a mob, you are close enough to spawn the Hunt.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Aglaope</b></td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>The Rak'tika Greatwood</b></td>
+						<td rowspan="2">Kill 100 of each: Cracked Ronkan Doll, Cracked Ronkan Thorn, Cracked Ronkan Vessel.</div></td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Ixtab</b></td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>The Tempest</b></td>
+						<td rowspan="2">Be hit with the Buccal Cones attack by a Clionid that has become fully enlarged by eating three Deep Sea Leeches.  The Buccal Cones attack deals 100% of the target's HP, but can be survived with tank immunities and absorb shields, however the attack ignores damage reductions.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Gunitt</b></td>
+					</tr>
+					<tr class="tr1">
+						<th colspan="2">Stormblood</th>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>The Fringes</b></td>
+						<td rowspan="2">Kill 100 Leshies and 100 Daikkas.  Leshies can be found in the general vicinity of East End and Velodyna River.  Daikkas can be found in Dimwold; additional Daikkas spawn in the FATE "Diakka Round".</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Udumbara</b></td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>The Peaks</b></td>
+						<td rowspan="2">Ride a chocobo porter.  It will spawn roughly halfway through the ride.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Bone Crawler</b></td>
+					</tr>
+					<tr class="tr2">					
+						<td class="tc1"><b>The Lochs</b></td>
+						<td rowspan="2">Discard 50 times.  It is the act of discarding that triggers the spawn, not what is discarded.  Stack size has no affect and it is recommended to discard items in stacks of one.</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Salt and Light</b></td>
+					</tr>	
+					<tr class="tr3">					
+						<td class="tc1"><b>The Ruby Sea</b></td>
+						<td rowspan="2">Spawns during a Full Moon.  Kill 100 Yumemis and 100 Naked Yumemis, both of which can be found in the three underwater caves.  Yumemis also spawn in the FATE "Double Dream Clams" at 35x25y.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Okina</b></td>
+					</tr>
+					<tr class="tr2">					
+						<td class="tc1"><b>Yanxia</b></td>
+						<td rowspan="2">Touch the correct spawn point with the Toy Alexander minion summoned.  This can be done while mounted; the minion still counts as summoned even though it disappears while mounted.  This can also be done while flying within range of the spawn point; in general if you are close enough to the ground to aggro a mob, you are close enough to spawn the Hunt.</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Gamma</b></td>
+					</tr>
+					<tr class="tr3">					
+						<td class="tc1"><b>The Azim Steppe</b></td>
+						<td rowspan="2">Touch the correct spawn point after the FATE "Not Just a Tribute" is completed.  You do not need to participate in the FATE.  This can also be done while flying within range of the spawn point; in general if you are close enough to the ground to aggro a mob, you are close enough to spawn the Hunt.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Orghana</b></td>
+					</tr>
+					<tr class="tr1">
+						<th colspan="3">Heavensward</th>
+					</tr>
+					<tr class="tr2">					
+						<td class="tc1"><b>Coerthas Western Highlands</b></td>
+						<td rowspan="2">Touch the correct spawn point with either the Baby Behemoth minion or Behemoth Heir minion summoned.  This can be done while mounted; the minion still counts as summoned even though it disappears while mounted.  This can also be done while flying within range of the spawn point; in general if you are close enough to the ground to aggro a mob, you are close enough to spawn the Hunt.</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Kaiser Behemoth</b></td>
+					</tr>			
+					<tr class="tr3">					
+						<td class="tc1"><b>The Sea of Clouds</b></td>
+						<td rowspan="2">Spawns when Squonk uses Chirp.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Bird of Paradise</b></td>
+					</tr>			
+					<tr class="tr2">					
+						<td class="tc1"><b>Azys Lla</b></td>
+						<td rowspan="2">Kill 50 Allagan Chimeras, 50 Meracydian Vouivre, and 50 Lesser Hydra.  Chimeras can be found along the northside of Beta Quadrant.  Vouivres and Hydras can be found together along the mid-southside of Delta Quadrant.</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Leucrotta</b></td>
+					</tr>			
+					<tr class="tr3">					
+						<td class="tc1"><b>The Dravanian Forelands</b></td>
+						<td rowspan="2">Complete the FATE "Cerf's Up" five times consecutively.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Senmurv</b></td>
+					</tr>			
+					<tr class="tr2">					
+						<td class="tc1"><b>The Dravanian Hinterlands</b></td>
+						<td rowspan="2">Complete a treasure map.  It will spawn when the treasure chest is opened.  Only Wyvernskin is valid.</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>The Pale Rider</b></td>
+					</tr>			
+					<tr class="tr3">					
+						<td class="tc1"><b>The Churning Mists</b></td>
+						<td rowspan="2">Gather Aurum Regis Ore (60 MIN, 2am/pm-4am/pm, Slot 6) or Seventh Heaven (60 BOT, 4am/pm-6am/pm, Slot 1).  Both nodes require the respective Dravanian Folklore unlocks.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Gandarewa</b></td>
+					</tr>			
+					<tr class="tr1">
+						<th colspan="3">A Realm Reborn</th>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Middle La Noscea</b></td>
+						<td rowspan="2">Gather Grade 3 La Noscea Topsoil (Level 50 MIN, 7pm-10pm, Slot 8)</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Croque-Mitaine</b></td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Lower La Noscea</b></td>				
+						<td rowspan="2"> Touch correct spawn point between 5pm-6am during a Full Moon.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Croakadile</b></td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Eastern La Noscea</b></td>				
+						<td rowspan="2"> Automatically spawns once 200 minutes of dry weather occurs.  This is valid even if it occurs before the respawn timer has elapsed and remains valid until the next rain or showers.</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>The Garlok</b></td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Western La Noscea</b></td>				
+						<td rowspan="2"> Gather La Noscean Leeks (Level 50 BOT, 8am-11pm, Slot 6)</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Bonnacon</b></td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Upper La Noscea</b></td>				
+						<td rowspan="2"> Touch the correct spawn point with any minion summoned.  This can be done while mounted; the minion still counts as summoned even though it disappears while mounted.</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Nandi</b></td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Outer La Noscea</b></td>				
+						<td rowspan="2"> Spawns when a player dies.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Chernobog</b></td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Central Shroud</b></td>				
+						<td rowspan="2"> Automatically spawns 2 hours and 15 minutes (Eorzean Time) after a second consecutive rain begins.</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Laideronnette</b></td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>East Shroud</b></td>				
+						<td rowspan="2"> Initiate a battlecraft levequest.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Wulgaru</b></td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>South Shroud</b></td>				
+						<td rowspan="2"> Touch the correct spawn point between 12am-6am during the first night of a New Moon or 5pm-6am during following nights of a New Moon.</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Mindflayer</b></td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>North Shroud</b></td>				
+						<td rowspan="2"> Land a Judgeray.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Thousand-cast Theda</b></td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Western Thanalan</b></td>				
+						<td rowspan="2"> Land a Glimmerscale</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Zona Seeker</b></td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Central Thanalan</b></td>				
+						<td rowspan="2"> Eat any food while on the correct spawn point.  This can be done while mounted.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Brontes</b></td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Eastern Thanalan</b></td>				
+						<td rowspan="2"> Initiate a battlecraft levequest.</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Lampalagua</b></td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Southern Thanalan</b></td>				
+						<td rowspan="2"> Prevent FATEs from failing for 1 hour.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Nunyunuwi</b></td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Northern Thanalan</b></td>				
+						<td rowspan="2"> Kill 100 Earth Sprites</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Minhocao</b></td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Mor Dhona</b></td>				
+						<td rowspan="2"> Complete a treasure map.  It will spawn when the treasure chest is opened.  Mysterious, Piesteskin, Toadskin, and Boarskin are valid.</td>
+					</tr>
+					<tr class="tr3">
+						<td class="tc1"><b>Agrippa the Mighty</b></td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Coerthas Central Highlands</b></td>				
+						<td rowspan="2"> Take critical damage (be reduced to 5% or lower HP through damage).  Falling damage is valid, thus jumping off a cliff is valid.</td>
+					</tr>
+					<tr class="tr2">
+						<td class="tc1"><b>Safat</b></td>
+					</tr>
+				</table>
+			</div>
+			<div id="huntcnt2">
+				<div>
+					<table class="tnbb">
+						<tr class="tr0">
+							<th class ="th0" colspan="4">Elite Mark Descriptions</th>
+						</tr>
+					</table>
+					<table class="tnvb" id="shadowbringers">
+						<tr id="desdisplay1">
+							<td colspan="5" class="markcnt2">
+								<a href="#endwalker"><button class="rgbtn">Endwalker</button></a>
+								<a href="#shadowbringers"><button class="rgbtn">Shadowbringers</button></a>
+								<a href="#stormblood"><button class="rgbtn">Stormblood</button></a>
+								<a href="#heavensward"><button class="rgbtn">Heavensward</button></a>
+								<a href="#arealmreborn" ><button class="rgbtn">A Realm Reborn</button></a>
+							</td>
+						</tr>
+						<tr id="desdisplay2">
+							<td colspan="5" class="markcnt2">
+								<a href="#endwalker"><button class="rgbtn">END</button></a>
+								<a href="#shadowbringers"><button class="rgbtn">ShB</button></a>
+								<a href="#stormblood"><button class="rgbtn">StB</button></a>
+								<a href="#heavensward"><button class="rgbtn">HW</button></a>
+								<a href="#arealmreborn" ><button class="rgbtn" >ARR</button></a>
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr class="tr0">
+							<th colspan="2">Shadowbringers</th>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Novrandt</div>
+								from Halldor of The Crystarium
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">SS Rank<hr>Forgiven Rebellion</td>
+							<td>
+								<p class="ddp1">This is a curious mark. According to my sources, they hail from beyond Il Mheg's borders, and may well roam all across Norvrandt.</p>
+								<p class="ddp1">It's a mean bastard, even for a wandering eater. We've received reports of it actively seeking out veteran hunters, as if it craves the thrill of the fight.</p>
+								<p class="ddp1">Which isn't to say that it fights fair. Sadly, several of our top Nutters have been ambushed while returning home from a successful hunt, which has led some to wonder if it commands lesser minions to guide it to promising prey.</p>
+								<p class="ddp1">As for who it was before it turned─some say it was an elven soldier who led others in open revolt against the rulers of Lakeland before the Flood, all at the behest of the mysterious Shadowkeeper, and that like the Virtues, its unusual hunting habits are rooted in its past life...</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Lakeland</div>
+								from Meranth of Fort Jobb
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Tyger</td>
+							<td>
+								<p class="ddp1">Sightings of this particular mark are first recorded in the days following the Flood of Light.</p>
+								<p class="ddp1">When the doors of the tower that stands at the center of the Crystarium first opened, it is written that the Tyger came barreling forth like a shot from a cannon.</p>
+								<p class="ddp1">But despite its grand entrance, it behaved little different than any other wild beast, devouring livestock and attacking hapless travelers. It rather likes meat, though it has a clear preference for poultry by all accounts.</p>
+								<p class="ddp1">I can't say I entirely trust the accounts of its origin, but given its unusual appearance, I would be not at all surprised if it was indeed a creature come from another world.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Nuckelavee</td>
+							<td>
+								<p class="ddp1">The Kingdom of Rainbows is filled to the brim with fae folk who delight in tormenting us poor mortals, often in ways that result in our demise.</p>
+								<p class="ddp1">Well enough, I suppose, so long as they stick to their territory, but lately there's been talk of some coming into Lakeland. Don't believe me? Then how else can you explain the otherworldly horse seen loitering by the shore, attempting to lure curious folk into the water?</p>
+								<p class="ddp1">'Tis none other than Nuckelavee. A Fuath wielding glamours, most like, though none can say for certain. What I can say for certain, though, is that if you killed the devil we'd all be better for it.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Nariphon</td>
+							<td>
+								<p class="ddp1">Ever heard the tale of Nariphon? No? It's quite well known. Depends on who you ask, perhaps, but I'd like to think so. It's a favorite of mine...</p>
+								<p class="ddp1">I mean, it's a story about fair maidens growing on trees! As in you could walk right up to it and pluck 'em from the branches. Tell me that's not the stuff of dreams!</p>
+								<p class="ddp1">On the other hand, every naturalist you ask will swear that it was nothing of the sort. That it was people spying upon a tribe of cannibals in the middle of their dinner who convinced themselves they couldn't possibly be seeing what they saw. Me, I prefer the tree explanation myself, but...</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Itzpapalotl</td>
+							<td>
+								<p class="ddp1">The guard have their work cut out for them keeping the local fauna in check, but they manage well all things considered. However, there's one mark that continues to be a nuisance.</p>
+								<p class="ddp1">The Ronka called it Itzpapalotl, a butterfly or some such that feasts on the blood of the living.</p>
+								<p class="ddp1">You might scoff at the thought that a butterfly could be so dangerous, but know this: that butterfly once attacked a Crystarium outpost and claimed the lives of several good men and women. Do not underestimate the butterfly.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>La Velue</td>
+							<td>
+								<p class="ddp1">La Velue's a right bastard of a wolverine. Been reported attacking smallfolk and devouring livestock, and on the occasions some of the guard were able to respond, he made short work and a quick meal of them too.</p>
+								<p class="ddp1">Understand he's not some rabid, uncontrollable beast, though. He's quick and cunning─able to size up an opponent and go to ground if he thinks he's overmatched.</p>
+								<p class="ddp1">More than few foolish Nutters made the mistake of pursuing him like any other common prey...and paid the ultimate price for it. One of them was the fiancée of a friend of mine. Vengeance was sworn, as you'd expect, but I'd rather have you spare him the trouble.</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Kholusia</div>
+								from Vroi-Reeq of Wright
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Forgiven Pedantry</td>
+							<td>
+								<p class="ddp1">Ah yes, the Forgiven Pedantry. That one's a notoriously vicious eater.</p>
+								<p class="ddp1">In life, he was a fusspot of a mage. Fond of his own voice and making fools of those he saw as his lessers, he boasted that he would find a way to reverse the chaos wrought by the Flood of Light.</p>
+								<p class="ddp1">You can imagine how that worked out for him in the end. One day he up and vanished, and a short while after, an eater wearing his face appeared.</p>
+								<p class="ddp1">For all his faults, his loss was felt keenly. He helped many with his magicks─powerful spells that utilized yarn he spun himself as catalysts. But I don't suppose eaters have much call for spinning yarn, do they...</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Huracan</td>
+							<td>
+								<p class="ddp1">Are you familiar with General Ran'jit's familiar, Gukumatz? It is a creature born of forbidden foreign magicks, passed down from general to general.</p>
+								<p class="ddp1">Familiars such as these are usually sustained by the aether of their master, which is why when they fall in battle, their minions fall as well. There are, however, certain notable exceptions.</p>
+								<p class="ddp1">Ran'jit's father commanded a familiar as well, but when he was slain by a sin eater, Huracan somehow survived, and has been seen on several occasions since. One theory posits that since the master was transformed into an eater, the familiar endures, though it is no more than conjecture...</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>L'il Murderer</td>
+							<td>
+								<p class="ddp1">Folks on Kholusia have never gotten on all too well with hobgoblins. There's been conflict for as long as anyone can remember.</p>
+								<p class="ddp1">They're clever enough to use tools, but they lack patience and foresight. You'll never catch them plowing a field, to say the least. Building's not in their nature─but thievery and destruction, they most certainly are.</p>
+								<p class="ddp1">Li'l Murderer, as some have taken to calling him, is perhaps the worst of the lot. A liar and a scoundrel who has swindled countless innocents, relieving them of their worldly possessions and often their lives as well. He is a cunning fiend and is not to be underestimated.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Indomitable</td>
+							<td>
+								<p class="ddp1">You may be interested to learn that this mark was brought to our attention by a resident of Amity, way up above.</p>
+								<p class="ddp1">Apparently, it's an automaton the Goggs originally built for mining that malfunctioned and has since been attacking anything and everything that moves.</p>
+								<p class="ddp1">Considering this spat I hear's been going on between the dwarven factions for a while now, I wouldn't be surprised if the malfunction was in truth sabotage...but regardless, a mark's a mark.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Coquecigrue</td>
+							<td>
+								<p class="ddp1">You may have noticed the rails which roam the wilds surrounding Wright. Coquecigrue may be likened to a king of sorts.</p>
+								<p class="ddp1">On the whole, the beasts can be highly aggressive and territorial. Indeed, they drove away nearly all other competing species, and those they could they simply slaughtered. They've even been known to attack travelers and residents of Gatetown.</p>
+								<p class="ddp1">At this rate, I shouldn't be surprised if they march on Wright en masse. And so before it comes to that, we believe we should teach these feathered menaces a lesson in respect, starting with their leader.</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Ahm Araeng</div>
+								from Haline of Twine
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>The Brainy One</td>
+							<td>
+								<p class="ddp1">The Brainy One is a saichaniae that plays host to parasitic vegetation that feeds off its host's aether. Poor bugger, eh? It's awfully difficult to track down, but it is said to be somewhat, er...excitable in the presence of death.</p>
+								<p class="ddp1">I reckon it's anticipating the impending release of aether. Like if someone were to wave a freshly cooked haunch of mole meat under your nose.</p>
+								<p class="ddp1">That said, not all deaths are created equal. The flashier the better, if that makes any sort of sense?</p>
+								<p class="ddp1">Distance is key too, I'd imagine. No point in putting on a show if the host is nowhere nearby. Maybe something explosively loud, too? I don't know, you'll probably think of something if you put your mind to it.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Maliktender</td>
+							<td>
+								<p class="ddp1">Here's a language lesson for you: Malik means “king” or some such in the old tongue, so take a wild guess what Maliktender means. That's right.</p>
+								<p class="ddp1">You'll know him when you seem him. Picture a gigantender, then picture his ornery liege lord. And there you have it.</p>
+								<p class="ddp1">Some scholars say that the damned things can live more than two hundred years in the right conditions, which means this bugger could have been shambling about since before the Flood, for all we know...</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Sugaar</td>
+							<td>
+								<p class="ddp1">People often focus on the material losses, but the Flood is also responsible for depriving us of wisdom and knowledge─and no few religious traditions. Without people to pass them down to, faiths wither and die. But some survived, and with them stories, like that of the demon Sugaar.</p>
+								<p class="ddp1">It's a simple tale, to be fair. “Listen to what your elders say, or Sugaar will come and spirit you away.” It helped too that it was a big, scary lizard.</p>
+								<p class="ddp1">So when a particularly large sibilus was seen wandering Amh Araeng, it's no surprise that people thought to name it for the legend. Nevertheless, it's probably prudent not to ignore the wisdom of the aged, eh?</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Juggler Hecatomb</td>
+							<td>
+								<p class="ddp1">This all dates back to when Nuvy's Leavings was still bustling with activity. The tunnels were dark─as tunnels generally are─and children kept stirring up trouble with rumors that they'd been seeing ghosts.</p>
+								<p class="ddp1">Ghosts of miners who died in a cave-in after digging too deep, or poor put-upon laborers tasked with hauling materials back for potters─all kinds of silly stories and then some.</p>
+								<p class="ddp1">Recently, however, this musty old tome came to light. Belonged to a mage of Nabaath Areng, who kept detailed records of his experiments. Apparently he decided to condemn one such “experiment” to a particularly deep tunnel, right around the time the whispers of ghosts first started.</p>
+								<p class="ddp1">So that there's your logical explanation, if you're looking for it. A misshapen fiend that shouldn't be has been stirring up trouble for years and years. Or it's been killing folks for years and years, and ghosts are real. You tell me.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Worm of the Well</td>
+							<td>
+								<p class="ddp1">Story goes that there was this fellow way back when. Bloody obsessed with all things fishing and with a penchant for strange ideas. Heads to Malikah's Well one day to take the air and to try something new.</p>
+								<p class="ddp1">He'd caught a small but lively little worm swimming about in the sand, and reckoned it'd make for fine bait. Goes to stick the hook in, when what does the little bugger do but jump right out of his hands and escape.</p>
+								<p class="ddp1">Fair bit of time passes before the notorious worm makes its first appearance. Just how it got so big is anyone's guess, but some speculate that it was that same worm, grown fat and strong off all kinds of fish in the well, hence the moniker.</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Il Mheg</div>
+								from Halldor of The Crystarium
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Aglaope</td>
+							<td>
+								<p class="ddp1">Aglaope's tale is quite old─a popular parable of the Voeburtites. It's about a tiny pixie of surpassing beauty that loved to bask in the midday sun, whose voice was as the tinkling of bells...and another pixie that envied them so.</p>
+								<p class="ddp1">Said pixie wanted nothing more than to transform themselves into the spitting image of the object of their admiration, and so they used their magicks again and again and again to refine their own appearance, until eventually, they had achieved the impossible.</p>
+								<p class="ddp1">If the story ended here I suppose it wouldn't be so bad, but it doesn't. For you see, when the glamoured pixie's “friends” saw what they'd done to themselves, they erupted into uncontrollable laughter. They mocked the pixie terribly, calling them ugly and terrifying beyond belief.</p>
+								<p class="ddp1">Thus was the pixie Aglaope instilled with a terrible hatred and envy for all things small and beautiful, and ever after did they roam the land in search of little wonders to destroy with impunity.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>The Mudman</td>
+							<td>
+								<p class="ddp1">So the pixies are no strangers to mischief. Their penchant for transforming lost travelers and trespassers into leafmen is known by all.</p>
+								<p class="ddp1">Well, one day, this particular pixie decides to try and work their fae magicks on a particular leafman to try and make something new, and the result? The mudman, a heretofore unseen abomination, is born.</p>
+								<p class="ddp1">Why mud? No idea. I'm told the victim was originally a portly Mystel woman─not that you could tell by the look of it now. Still, that crimson pixie that frequents the Crystarium has been known to embellish their stories from time to time...</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>O Poorest Pauldia</td>
+							<td>
+								<p class="ddp1">About a year ago it was when a party of scavengers ventured into ruins of old Voebert and discovered a hidden passage that led deep underground to a secret gaol, and in one of its cells found a horrible beast bound in chains.</p>
+								<p class="ddp1">A name had been carved into a sign: Pauldia. The same name as the younger princess. Nearer to the fiend, writ in blood on the walls, was a message...</p>
+								<p class="ddp1">"Blinded by my lust for the throne, I heeded a traitor's honeyed words. I was a pawn in his grand design and paid the price. I beg only for the selfsame mercy my sister received...“</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Domovoi</td>
+							<td>
+								<p class="ddp1">Oh, that's a sad tale, it is. There was this pixie who couldn't bear to be without company, you see, and so it used its magicks to fashion a constant companion─Domovoi.</p>
+								<p class="ddp1">It was a construct loyal as they come, bound to serve its master forever and ever and ever...until the little pixie crossed paths with a sin eater.</p>
+								<p class="ddp1">No one knows how long it's been since Domovoi was deprived of its master and meaning, but it still wanders Il Mheg, searching in vain for the one who gave it life.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Vulpangue</td>
+							<td>
+								<p class="ddp1">Never heard of Vulpangue? Tales of its exploits were recorded in the annals of the Kingdom of Voeburt. Their naturalists described it as a serpent of unusual size that was rather docile that subsisted on a diet of bugs and butterflies...</p>
+								<p class="ddp1">But do not be deceived, for the creature fellow Nutters observed was anything but docile! Nay, it was both swift and ruthless when it spied a poor pixie out on a midday stroll and snatched it out of the air, swallowing it with a single gulp!</p>
+								<p class="ddp1">One of the fae folk, brimming with all kinds of powerful magicks, gobbled up in a flash! No common beast could do that, could they? Could they!?</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">The Rak'tika Greatwood</div>
+								from Ingvar of Slitherbough
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Ixtab</td>
+							<td>
+								<p class="ddp1">The Viis are not the only ones who have safeguarded the ruins of Ronka for generations. Ancient records tell of an exalted priestess of the empire named Ixtab, a penitent woman and proud patriot.</p>
+								<p class="ddp1">So strong was her faith that she resolved to make the ultimate sacrifice. She consigned her mortal flesh to flame, and in death rose anew, her soul eternally bound to the Greatwood.</p>
+								<p class="ddp1">For thousands upon thousands of years has she watched over these lands. Should one intrude upon her home and by their deeds prove themselves a significant threat to peace and tranquility, she will appear to redress the balance.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Grassman</td>
+							<td>
+								<p class="ddp1">There are many Ronkan legends that have been passed down through the ages, including one which speaks of a great colossus. A guardian spirit bound to serve its creators. And now there are whispers this colossus walks the Greatwood once more, spurred by the discovery of massive tracks.</p>
+								<p class="ddp1">What left these tracks remains a mystery, but I doubt it is this ancient being. Rather, it is likely one of the last remaining apemen. Their numbers have dwindled greatly since the coming of the sin eaters.</p>
+								<p class="ddp1">Why Grassman has come to the Greatwood I cannot say, but I suspect he seeks his fallen brethren in vain...</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Supay</td>
+							<td>
+								<p class="ddp1">Some time ago, there were a series of disappearances. Younglings who vanished without a trace from Slitherbough. We thought them taken by the Children, but eventually learned who the true culprit was.</p>
+								<p class="ddp1">Of the countless rails that call the Greatwood home, Supay is the largest and most formidable. Unlike its brethren, it feeds not on plants, but on flesh and blood...</p>
+								<p class="ddp1">It is an ambush predator, striking fear into its prey with a shrill cry before attacking in full force. This was witnessed by one of our scouts. Thus did we name it for a bird of Ronkan legend whose mournful song heralds death and doom.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Mindmaker</td>
+							<td>
+								<p class="ddp1">You have encountered the tomatl before? A plant which hungers for flesh, it masquerades as an earthen vessel, and bursts forth to seize unsuspecting prey, which it consumes after much softening with acid.</p>
+								<p class="ddp1">A dangerous foe indeed, but the Mindmaker is more so. Larger, stronger, faster, more deadly by every measure it is.</p>
+								<p class="ddp1">Why Mindmaker, you ask? I cannot say with confidence, but I believe it has something to do with its habit of devouring the heads of its prey first, and the speculation that it grows wiser with each consumed.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Pachamama</td>
+							<td>
+								<p class="ddp1">Pachamama is a creature of Ronkan legend. A great serpent, the harvest goddess Yx'Anpa made flesh, which claimed the Greatwood as its home.</p>
+								<p class="ddp1">A regal creature of pure divinity through which the essence of life itself flowed, it was believed that the soil which drank deep of its blood would yield an endless bounty, and so many great warriors of Ronka sought to lay it low.</p>
+								<p class="ddp1">The slayer of Pachamama would be afforded much glory, their deeds celebrated for generations to come. Will you be the one to claim the honor?</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">The Tempest</div>
+								from Judric of Eulmore
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Gunnit</td>
+							<td>
+								<p class="ddp1">Gunitt was like most other dwarves of Kholusia─tough, hardworking, tiny. By all accounts he was content with his lot, until one day he spied a Galdjent three times his size strolling through the market, and decided he'd make himself tall or die trying.</p>
+								<p class="ddp1">So he travels the world, amasses all kinds of treasure, then pays a visit to a Nu Mou hermit who claims he can make his dreams come true, and would you believe it? Gunitt gets his wish! But then, in his greed, he steals the treasure sack off the table and runs off before the hermit can protest.</p>
+								<p class="ddp1">'Course he was a damn fool to try, cause the hermit gets their own back in the end. Curses Gunitt and transforms him into a twisted fiend for his avarice. Also sank his ship while he was making his escape for good measure.</p>
+								<p class="ddp1">And so Gunitt was consigned to the bottom of the sea where he has wandered to this day. They say his covetous nature still rules him, as when the denizens of the depths attempt to consume their prey, he will appear to steal it out from under them.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Baal</td>
+							<td>
+								<p class="ddp1">If you've been down to the ocean floor, you might've seen the dagons wandering about. They're a nuisance to be sure, and not at all a pleasure to look upon.</p>
+								<p class="ddp1">Well, there's this Ondo legend about something even worse born of a dagon, a temperamental fiend that sows chaos if angered, but invites calm if appeased. Baal, they call him, and under normal circumstances they might simply try to keep a wide berth...</p>
+								<p class="ddp1">Unfortunately, it seems it's a little too late for that. And now the fabled cleansing hour is at hand, when all creatures of the sea must bow to Baal or be destroyed. Neither option is ideal, so we'd all very much appreciate it if you could go and kill the damned thing.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Rusalka</td>
+							<td>
+								<p class="ddp1">Doubtless you've noticed the wrecks on the shore and at the bottom of the Tempest. Eulmore's a city on the sea, and like most such cities it's seen countless ships come and go over the years and decades. Accidents happen.</p>
+								<p class="ddp1">A few merchant vessels sink, and it's a small tragedy, aye. But a royal flagship carrying a foreign queen? That's another story. This one had no shortage of unfinished business, which is probably why her soul lingered where she died, her regret festering and twisting her goodly nature...</p>
+								<p class="ddp1">They say Rusalka's bewitching beauty and hypnotic voice guided a hundred ships to their watery graves. She's got far fewer to prey on now, though, so I wouldn't be surprised if she sets her sights on anyone and everyone wandering the Tempest floor...</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Deacon</td>
+							<td>
+								<p class="ddp1">Before the Flood, the Ondo had turned up all kinds of ruins deep in the ocean. Some of them saw deeper meaning it─religious meaning. But like the Church of the First Light and many other traditions, much of that was lost with the coming of the White.</p>
+								<p class="ddp1">Apparently one of those defunct traditions worshipped a great crab, Deacon. Perfection incarnate that surpassed man and Ondo alike, a venerated being that would guide the faithful unto glory everlasting.</p>
+								<p class="ddp1">For a holy symbol he was awfully clever, too. Would stumble about like a drunken sailor and lure would-be predators to come close enough for him to reach out and crush 'em with his mighty claws. Aye, he's definitely smarter than the average crab.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Gilshs Aath  Swiftclaw</td>
+							<td>
+								<p class="ddp1">Gilshs Aath Swiftclaw is one of those benthos bastards. A master fisherman who works both the shallows and the depths, bringing in his catch with his bare hands.</p>
+								<p class="ddp1">You're probably wondering why someone saw fit to put a bounty on a fisherman, eh? Well, that'd be because this one uses other fishermen as bait. Other Ondo and poor fools he's dragged from Eulmoran boats, all in service to some long-forgotten god.</p>
+								<p class="ddp1">It's gotten so bad that some folks are too afraid to take to the water, so the authorities would have us put a stop to him before any more sacrifices are made.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dtop" colspan="2"><a href="#Top">Return to Top</a></td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table class="tnvb" id="stormblood">
+						<tr id="desdisplay1">
+							<td class="markcnt1"><a href="#shadowbringers"><button class="rgbtn">Shadowbringers</button></a></td>
+							<td class="markcnt2"><a href="#stormblood"><button class="rgbtn">Stormblood</button></a></td>
+							<td class="markcnt2"><a href="#heavensward"><button class="rgbtn">Heavensward</button></a></td>
+							<td class="markcnt3"><a href="#arealmreborn" ><button class="rgbtn">A Realm Reborn</button></a></td>
+						</tr>
+						<tr id="desdisplay2">
+							<td class="markcnt1"><a href="#shadowbringers"><button class="rgbtn">5.0</button></a></td>
+							<td class="markcnt2"><a href="#stormblood"><button class="rgbtn">4.0</button></a></td>
+							<td class="markcnt2"><a href="#heavensward"><button class="rgbtn">3.0</button></a></td>
+							<td class="markcnt3"><a href="#arealmreborn" ><button class="rgbtn" >2.0</button></a></td>
+						</tr>
+					</table>
+					<table>
+						<tr class="tr0">
+							<th colspan="2">Stormblood</th>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">The Fringes</div>
+								from Yayaneja of Castrum Oriens
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Udumbara</td>
+							<td>
+								<p class="ddp1">Ah, the elusive Udumbara. Patient. Silent. Deadly. This massive man-eating plant is rarely seen until it bursts forth from the ground to feed.</p>
+								<p class="ddp1">So difficult is this mark to find, it takes its name from a tree of legend whose flowers are said to bloom only once every three thousand years.</p>
+								<p class="ddp1">One theory has it that Udumbara senses the silent screams of nearby vegetation, their unheard cacophony bringing word of approaching prey. Mayhap there is a way to use this knowledge to coax the monster from its earthen nest...</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Erle</td>
+							<td>
+								<p class="ddp1">You wish to learn what I know of Erle? Of the venomous sting potent enough to fell a jhammel? Of the hurricane winds whipped forth by the beating of her wings?</p>
+								<p class="ddp1">There is a tale I heard from the Ananta. It is told that the Nunh of the M Tribe went forth to battle this vilekin queen, trapping her within a cavern even as her stingers injected his heart with lethal venom.</p>
+								<p class="ddp1">When the Yawn opened up, however, the ripples collapsed the cavern's walls, and the imprisoned Erle was set free once again.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Orcus</td>
+							<td>
+								<p class="ddp1">Fearing their many natural predators, antlions prefer to burrow beneath the ground and lie in wait for their prey in relative safety. But Orcus is of a different breed─this monster will hunt along the surface, as bold as you please.</p>
+								<p class="ddp1">As well she might. Why should Orcus cower from aught which walks or flies when she can spit a secretion caustic enough to erode steel?</p>
+								<p class="ddp1">It is said that she only began displaying such behavior after the expansion of her hunting grounds brought her closer to the Percipient One. Could this proximity have influenced the vilekin's sudden transformation in some way? A worthy mystery.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Ouzelum</td>
+							<td>
+								<p class="ddp1">Ouzelum is a gagana of frightening size, his beak sickle-sharp and often strung with the gore of his latest victim. His stunted wings could never lift his bulk, but do not think yourself safe on higher ground─the bird's powerful legs propel him over the largest boulders with ease.</p>
+								<p class="ddp1">For the Ananta and the M tribe of the Fringes, this flesh-craving terror has proven a constant threat to safety and sanity.</p>
+								<p class="ddp1">In fact, several years ago there was a string of incidents involving the disappearance of the M tribe's young. When the Miqo'te followed the trail of the suspected kidnapper, it led to one of Ouzelum's known haunts and a heart-wrenching pile of small, gnawed bones...</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Shadow-dweller Yamini</td>
+							<td>
+								<p class="ddp1">Amongst the Qalyana there was a maiden known as Yamini. Born under a star of resplendent arcane bounty, her potent magicks brought her to the unfortunate attention of imperial recruiters.</p>
+								<p class="ddp1">Alliance spies determined that they took the Ananta lass to a well-secured corner of Ala Mhigo, where they imprisoned her inside a testing facility.</p>
+								<p class="ddp1">What foul experiments they performed upon her, I cannot say, but when she was at last released, Yamini had lost all semblance of her former self. She dwelled in a place of shadow, existing only to bring harm unto others.</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">The Peaks</div>
+								from Wicked Ambush of Ala Ghiri
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Bone Crawler</td>
+							<td>
+								<p class="ddp1">When trade with the East was at its most prosperous, they used to hire mercenary companies to clear the routes o' monstrous predators. Seems the buggers were too good at their job, though, an' managed to wipe out an entire species.</p>
+								<p class="ddp1">A sort o' huge, fang-mouthed scalekin, it was, an' it's been thought extinct for decades...until one o' them attacked a merchant caravan just the other day.</p>
+								<p class="ddp1">The bloke what lent the caravan his chocobos tells me that there weren't naught left of his birds─no feathers, no tackle, no skulls. Ever since, they've taken to callin' this thing the "Bone Crawler."</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Aqrabuamelu</td>
+							<td>
+								<p class="ddp1">If I asked ye what imperial supply trains fear the most, ye might say an attack by the Ala Mhigan Resistance. An' ye'd be wrong.</p>
+								<p class="ddp1">Them as escort the Empire's cargo are afraid of a visit from Aqrabuamelu─a bloody enormous lava scorpion with an insatiable appetite for ceruleum.</p>
+								<p class="ddp1">Every time it sinks its mandibles into a fuel tank, Aqrabuamelu's lava spray grows hotter an' hotter. Aye, hot enough to melt the machina sent to slay it, an' provide the vilekin with yet another ceruleum feast.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Vochstein</td>
+							<td>
+								<p class="ddp1">Griffins have been bred in Gyr Abania for generations, but the Vochstein family was famous for the quality of its beasts.</p>
+								<p class="ddp1">The griffins they raised was sought after by all, an' even the royal house had a few "Vochsteins" in its stables. Then the Empire invaded.</p>
+								<p class="ddp1">Not wantin' the imperials to steal his prized breedin' stock, the head o' the Vochstein family threw open the door to a certain stall. What flew out in a flurry o' feathers an' talons was the biggest, meanest sire what ever hunted the skies.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Buccaboo</td>
+							<td>
+								<p class="ddp1">The fisherfolk what drop their lines in the rivers here in the Peaks have a custom o' leavin' behind a part o' their catch on the banks─a way to express their gratitude to nature, or summat.</p>
+								<p class="ddp1">Well, a muud suud runt by the name o' Buccaboo was certainly grateful, since eatin' them fish is how he survived exile from his clan.</p>
+								<p class="ddp1">One day, though, he decided it'd be quicker to snatch his meals straight from the fisherfolk themselves. He grew larger an' larger, an' eventually the fish weren't enough to satisfy him. That's when he moved on to man-flesh...</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Gwas-y-neidr</td>
+							<td>
+								<p class="ddp1">Amongst the kongamato, it's the lady bugs what are the biggest an' the strongest.</p>
+								<p class="ddp1">Violent an' voracious, they'll mate with a male an' then eat the poor bastard for supper.</p>
+								<p class="ddp1">Now, Gwas-y-neidr, she's the worst o' the lot. Bleedin' huge, she is, on account of all the suitors she's devoured. That's the sort o' woman ye'd best court with a naked blade!</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">The Lochs</div>
+								from Hruodland of Rhalgr's Reach at the Hunt Board
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Salt and Light</td>
+							<td>
+								<p class="ddp1">According to the records of the Resistance, a clan of goblins once came barreling in from the west, and smashed through an imperial checkpoint.</p>
+								<p class="ddp1">The Empire's forces soon gave chase, and cornered the beastmen on the shores of Loch Seld. The goblins were slain to a man, but not before one of them hurled a strange device into the loch's waters.</p>
+								<p class="ddp1">The surface of the loch was seen to bulge upwards, forming into a watery giant which proceeded to decimate the Garlean soldiers before suddenly draining away once more. Honestly, folk should be more careful with what they choose to throw away...</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Luminare</td>
+							<td>
+								<p class="ddp1">Golems are creations of clay or stone which are imbued with a semblance of life. Luminare might be thought of us such a construction, only one which formed naturally from crystals.</p>
+								<p class="ddp1">Considering the lack of external impetus, there are scholars of aetherology who theorize its existence is closer to that of a sprite.</p>
+								<p class="ddp1">All we know for sure, however, is that such crystalline entities began to appear following the Calamity, and that they attack without fear or provocation. They are beautiful to behold, yes...but only from afar.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Mahisha</td>
+							<td>
+								<p class="ddp1">Mahisha is a minotaur who dwells in the Lochs, whose immense size and belligerent temperament is noteworthy even amongst his brutal kin.</p>
+								<p class="ddp1">...You might think such a description ordinary for one of our marks, but I confess it was some time before we knew exactly the manner of creature with which we were dealing. Many of the inital sightings were made under the cover of night, you see.</p>
+								<p class="ddp1">Some believed they were attacked by a lion, others a mammoth, while still others claimed a buffalo as their assailant. It was not until Clan Centurio became involved that we discovered the truth was worse than an amalgamation of all three.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Manes</td>
+							<td>
+								<p class="ddp1">Wherever men gather, one hears rumors. Like the tale of the vast subterranean prison hidden beneath the city of Ala Mhigo.</p>
+								<p class="ddp1">My own sources tell me its cells held many Ala Mhigan nobles, incarcerated by the mad king Theodoric on the mere suspicion of rebellion. Before their vassals could free them, however, the Empire's invasion began.</p>
+								<p class="ddp1">The imperials knew naught of the dungeon beneath their feet, and thus did its prisoners waste away in darkness. It is said that the souls of these unburied and unmourned nobles wander yet, tethered to this realm by their suffering...</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Kiwa</td>
+							<td>
+								<p class="ddp1">Loch Seld is home to a yabby of immense proportions known as "Kiwa."</p>
+								<p class="ddp1">The naturalist who requested the creature be registered as a mark was also responsible for its appellation─a name taken from "the south sea isles god of crustaceans," or so she claimed.</p>
+								<p class="ddp1">Search though I might, however, I could find no reference to such a deity. Mayhap it is some academic jest I do not understand.</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">The Ruby Sea</div>
+								from Wlveva of Kugane at the Hunt Board
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Okina</td>
+							<td>
+								<p class="ddp1">Have you heard tales of Okina, the giant striped ray? Drunken pirates insist that the wavekin devours whales, but this is an embellishment─otherwise known as an outright lie. Okina eats only krill.</p>
+								<p class="ddp1">The tiny shrimp gather to feed on the husks of shellfish, and when the seas teem with their numbers, that is when Okina appears, riding on the spring tide.</p>
+								<p class="ddp1">But though the great ray does not prey on whales, its cavernous mouth can swallow careless hunters whole. Be sure not to slip in the ebb and flow of the shallows.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Funa Yurei</td>
+							<td>
+								<p class="ddp1">A funa yurei is, loosely translated, a "ship ghost." Pray do not misunderstand this to mean the ghost of a ship.</p>
+								<p class="ddp1">Said to be the lost souls of those who perished at sea, these vengeful spirits seek to sink other vessels by filling them with water. Using a ladle. One could conceive of more effective methods, but who can know the mind of a ghost?</p>
+								<p class="ddp1">Whatever its purpose, a funa yurei has been seen haunting the area. Folklore has it that a bottomless ladle acts as a ward against such apparitions. Mayhap you could test this theory?</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Oni Yumemi</td>
+							<td>
+								<p class="ddp1">In the lands of Hingashi, if a creature should appear even slightly larger than its kin, it is soon appended with the title of "oni." The oni yumemi is a perfect example of this.</p>
+								<p class="ddp1">This demon specimen, however, earns the description not only for its size─though it is certainly large─but also for its violent behavior.</p>
+								<p class="ddp1">The oni yumemi shocks its prey into unconsciousness, and feeds while the victim is lost in dreams. And if that wasn't sufficiently horrific, this mark is rumored to wield powers of freezing ice...</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Gauki Strongblade</td>
+							<td>
+								<p class="ddp1">I trust you are aware of the Red Kojin, and their avaricious rampages across the Ruby Sea?</p>
+								<p class="ddp1">The worst of these raiders is a vicious brute known as Gauki Strongblade.</p>
+								<p class="ddp1">He is suspected of murdering as many as eight Hingan fisherfolk, his weapon stayed nary a moment by their pleas for mercy. But do not dismiss him as a simple savage─Gauki's skill with the sword is undeniable.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Guhuo Niao</td>
+							<td>
+								<p class="ddp1">In the carnival tents of Kugane, I have seen hornbills trained to mimic the speech of men.</p>
+								<p class="ddp1">Such a trick seems harmless enough, until you hear of the birds' wild cousin.</p>
+								<p class="ddp1">There is a cunning cloudkin known as Guhuo Niao which has taught itself a sinister way of hunting. Whimpering and wailing in the voice of a swaddling babe, it lures in its unsuspecting prey. The victims are found torn and pale, their bodies all but drained of blood...</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Yanxia</div>
+								from Hersande of Kugane in Shiokaze Hostelry
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Gamma</td>
+							<td>
+								<p class="ddp1">Ah, this one. The information on a rogue imperial prototype warmachina did not come cheaply or easily.</p>
+								<p class="ddp1">Ahem. "Codename: Gamma. This model was designed to be an automated improvement over the piloted armored weapon, allowing it to operate without loss of function in near darkness. The results were unsatisfactory and the project was supposedly scrapped.</p>
+								<p class="ddp1">"During testing, Gamma was commanded to attack a compact craft capable of considerable maneuverability. Now, whenever it detects said craft, the weapon engages in indiscriminate hostility."</p>
+								<p class="ddp1">Sounds positively cheery, doesn't it?</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Angada</td>
+							<td>
+								<p class="ddp1">In the society of the vanara, the scrabble to win the throne of alpha male is an exceptionally violent one. So ferocious are these battles for supremacy that the death of one or both combatants is not an uncommon outcome.</p>
+								<p class="ddp1">As such, young vanara will often leave the group for a time, and seek a solitary existence to improve their instincts for survival.</p>
+								<p class="ddp1">Angada, the progeny of a formidable alpha, has chosen his time of exile and presently walks the wilds alone. Though not yet in his prime, this juvenile vanara is said to have already surpassed the terrible strength of his sire...</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Gajasura</td>
+							<td>
+								<p class="ddp1">A beast tribe originating in the Near East, the Matanga are a hulking race of giants easily recognized by their mammoth-like heads.</p>
+								<p class="ddp1">They have difficulty with the tongues of men, and were thus not recognized as a sapient people by the conquering imperials. Subjected to oppression and hostility, some clans found themselves driven from their own territory.</p>
+								<p class="ddp1">These displaced Matanga drifted ever further east, where they survived by becoming raiders and pillagers. If any might be called a leader, it is the one known as Gajasura.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Deidar</td>
+							<td>
+								<p class="ddp1">The legends of the Far East tell of a giant by the name of Deidar. Our tale, however, begins with a man.</p>
+								<p class="ddp1">Now, had this man simply dreamed of building a statue of the legendary colossus, all might have been well. But he was an onmyoji of dubious skill, and he succeeded in imbuing his clay sculpture with the spirit of a shikigami.</p>
+								<p class="ddp1">In Eorzea his creation might have been called a golem. I would call it a failure. Thanks to the onmyoji's clumsy rituals, only the head came to life... It rolled free of its giant shoulders, and now waddles around the land in search of a more suitable body.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Gyorai Quickstrike</td>
+							<td>
+								<p class="ddp1">The Namazu are a beast tribe who have long inhabited the riverlands of the Far East. By and large they are a friendly sort, and welcome the trade of men.</p>
+								<p class="ddp1">There are those among them, however, who have resisted the encroachments of civilization. These wild Namazu are considered dangerous, as they often turn their scaled hands to banditry.</p>
+								<p class="ddp1">The worst of these bandits was once a peaceful merchant who succumbed to feral instincts, and fell into a life of villainous savagery. With a sad shake of the head and an uncontrollable shudder do folk speak the name of Gyorai Quickstrike.</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">The Azim Steppe</div>
+								from Jaliqai of Reunion
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Orghana</td>
+							<td>
+								<p class="ddp1">The Xaela of these lands have a custom wherein we carve the histories of our greatest heroes and warriors into stone reliefs.</p>
+								<p class="ddp1">The chuluu of the hero Orghana is an embodiment of his life's journey. So much so, that the stone itself wanders the steppes, seeking to emulate the story carved upon its surface.</p>
+								<p class="ddp1">Orghana, a son of the Himaa, was said to have had a twin sister. And one of our most famous tales concerns the vengeance he wrought upon his sibling's killers...</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Girimekhala</td>
+							<td>
+								<p class="ddp1">A mammoth is a large and powerful beast. But any Xaela who calls herself a hunter can dance around one of these steppe behemoths and bring it down with spear or bow.</p>
+								<p class="ddp1">Yet even the elders caution us to avoid the moving mountain known as "Girimekhala"─that we would not survive to their age if we did not.</p>
+								<p class="ddp1">An outsider scoffed at their words. Thinking to slay this king of mammoths and bask in our adulation, he set off in all confidence, musket in hand. He soon returned, sweat-drenched and shaking, swearing the bullet had bounced off Girimekhala's wooly hide.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Sum</td>
+							<td>
+								<p class="ddp1">There are two kinds of creatures on the steppes: those whose coloring blends in with the grasses and the rocks...and those who sear the eyes with their motley hues.</p>
+								<p class="ddp1">Any child could tell you that the first kind is patterned thus to avoid discovery by predators. But what of the second?</p>
+								<p class="ddp1">Should you ever encounter Sum, you will soon learn why its skin glistens crimson like freshly spilled blood...</p>
+								<p class="ddp1">It is a warning.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Aswang</td>
+							<td>
+								<p class="ddp1">A merchant visiting from beyond the steppes claimed he was attacked by a monster from the sky.</p>
+								<p class="ddp1">At first we thought he spoke of a yol or a muu shuwuu, but the trader insisted that it was neither of these. "A giant winged lizard," he said, in the face of much laughter.</p>
+								<p class="ddp1">And yet his was not the last sighting of this fantastic beast. Forced to accept the truth of its existence, we call it by the word the merchant taught us in his native tongue: Aswang.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Kurma</td>
+							<td>
+								<p class="ddp1">On the Azim Steppe, the matamatas are venerated for their longevity. To hunt one of these stately creatures is a great honor.</p>
+								<p class="ddp1">The matamatas, however, are not so easily hunted. And even amongst their enduring number, there is one whose long trail of life is strewn with the bodies of those who sought to claim his shell.</p>
+								<p class="ddp1">The steppe hunters call him "Kurma," the name spoken with hushed reverence. If you would hunt this mark, then do so with the respect this venerable legend deserves.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dtop" colspan="2"><a href="#Top">Return to Top</a></td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table class="tnvb" id="heavensward">
+						<tr id="desdisplay1">
+							<td class="markcnt1"><a href="#shadowbringers"><button class="rgbtn">Shadowbringers</button></a></td>
+							<td class="markcnt2"><a href="#stormblood"><button class="rgbtn">Stormblood</button></a></td>
+							<td class="markcnt2"><a href="#heavensward"><button class="rgbtn">Heavensward</button></a></td>
+							<td class="markcnt3"><a href="#arealmreborn" ><button class="rgbtn">A Realm Reborn</button></a></td>
+						</tr>
+						<tr id="desdisplay2">
+							<td class="markcnt1"><a href="#shadowbringers"><button class="rgbtn">5.0</button></a></td>
+							<td class="markcnt2"><a href="#stormblood"><button class="rgbtn">4.0</button></a></td>
+							<td class="markcnt2"><a href="#heavensward"><button class="rgbtn">3.0</button></a></td>
+							<td class="markcnt3"><a href="#arealmreborn" ><button class="rgbtn" >2.0</button></a></td>
+						</tr>
+					</table>
+					<table>
+						<tr class="tr0">
+							<th colspan="2">Heavensward</th>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Coerthas Western Highlands</div>
+								from Alexondre of Falcon's Nest
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Kaiser Behemoth</td>
+							<td>
+								<p class="ddp1">No doubt you've heard of the behemoths, those monstrous beasts that have been a bane on Coerthas ever since the Calamity. Adventurers like you have faced them in battle countless times, and have been meeting with more and more success of late.</p>
+								<p class="ddp1">However, there is one among their number that has always made good its escape, even when gravely wounded by the swords and spells of myriad adventurers. Due to its giant size and superior strength, it has become known as the king of the behemoths.</p>
+								<p class="ddp1">They say that this kaiser behemoth, whose body is crisscrossed with the scars of a thousand battles, seeks any opportunity to avenge itself on the adventurers who defeated its brothers. If you value your life, I'd avoid doing anything to arouse its ire.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Lyuba</td>
+							<td>
+								<p class="ddp1">There was once a dragonslayer who was out hunting his prey on the frozen lake of Ashpool, when he made a surprising discovery. An enormous animal was frozen solid underneath the ice.</p>
+								<p class="ddp1">Thinking that he could use the deceased creature's meat to lure the dragons into a trap, he lit a bonfire over the lake to melt its body free. A most ill-advised plan indeed...</p>
+								<p class="ddp1">You see, the beast wasn't quite as dead as the knight first thought. Freed from its icy prison, it began to breathe once more, and lashed out at all around it with elemental fury. When the dragonslayer set out to hunt for dragons, I doubt he expected to meet his end at the point of a tusk.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Mirka</td>
+							<td>
+								<p class="ddp1">Once every hundred thousand years or so, a yeti is born with a horn atop its massy head that is imbued with an extraordinary magical power. When the creature reaches maturity, it sends out a clarion call to the rest of the yetis that unites them under the horned one's rule.</p>
+								<p class="ddp1">...Or so the old wives' tale goes. The problem is, there might just be some truth in it. The Convictors believe they may have sighted such a "horned one."</p>
+								<p class="ddp1">The first thing they did was to name her Mirka─the second, to slap a bounty on her head. The yetis are dangerous enough as it is, but if this beast lives to maturity and brings them together as a single force, they could be nigh on unstoppable.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Alteci</td>
+							<td>
+								<p class="ddp1">I was born and raised here in the western highlands, so I know firsthand how much the place has changed. As the climate has got colder and colder, creatures that were never native to Coerthas have come down from the mountains to find food.</p>
+								<p class="ddp1">The mylodons are one such species. Time was they made their home up in the far reaches of Abalathia's Spine, but ever since their hunting grounds were lost to the Calamity, they've found their way down here. They're fierce carnivores, who see steel-clad knights as nothing more than a packed lunch.</p>
+								<p class="ddp1">Alteci's the worst of the lot─a mad mylodon who's been laying waste to the local forces. At the last count, more than a dozen noble lives have been lost to that monster.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Kreutzet</td>
+							<td>
+								<p class="ddp1">Have you ever come across an archaeornis? At first sight you might think they were birds, what with the feathers and all, but they're actually a primitive species of scalekin, closer to raptors than they are to chocobos.</p>
+								<p class="ddp1">The only thing they definitely share with birds is their brains─that combination of mental weakness and physical strength makes them perfect thralls for the dragons, who use them to launch constant attacks on the Ishgardian forces.</p>
+								<p class="ddp1">The knights are particularly wary of the one they call Kreutzet. He's got such strength in those thighs of his, even the thickest snowdrift's not enough to slow him down. He races hither and thither across the snowfields, tearing apart any outpost unlucky enough to stand in his way.</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">The Sea of Clouds</div>
+								from Noelle of Camp Cloudtop
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Bird of Paradise</td>
+							<td>
+								<p class="ddp1">The cool air and gentle breezes of the Sea of Clouds attract a wide variety of cloudkin, from the scaled to the furred to the feathered.</p>
+								<p class="ddp1">Among the latter, there is one as revered for its breathtaking beauty as it is feared for its insatiable thirst for blood─the fabled Bird of Paradise.</p>
+								<p class="ddp1">There is nothing that it loves more than to feast on living flesh. The moment it hears the plaintive cries of a wounded animal, it will swoop down from the skies with talons bared, drool dripping from its beak. Something to bear in mind should you wish to hunt for the bird yourself...</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Enkelados</td>
+							<td>
+								<p class="ddp1">Have you ever seen a groundskeeper? No, no, I'm not talking of our botanist friends. These are much more up a Clansman's alley─ten-fulm titans born from stone and magic. Whether they form naturally like sprites, or are magicked into existence like golems, I know not.</p>
+								<p class="ddp1">One thing is for certain, though─they feed on the rocks that make up these islands, and add the rubble they produce to their ever-growing forms.</p>
+								<p class="ddp1">The one the knights call Enkelados appears to have an especially prodigious appetite. If something isn't done about him soon, we shall all be living on his back before long...or in his gullet.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Sisiutl</td>
+							<td>
+								<p class="ddp1">Where we Eorzeans would employ a chocobo, the Vanu Vanu rely on the sanuwa─a race of winged scalekin native to the Sea of Clouds. They use them as pack animals, and as mounts for their cavalry.</p>
+								<p class="ddp1">Wild sanuwa are fierce, independent beasts, less like to take a bit in their teeth than their captors' gizzards. The sanuwa whisperers of the Vanu Vanu work wonders to tame the creatures against seemingly impossible odds.</p>
+								<p class="ddp1">Completely impossible, in some cases. The one they call Sisiutl has defied all attempts at domestication, the gentlest whisper driving the black-hearted beast into a furious rage. Not so long ago it broke free from its wranglers, and has begun to take out its ire on the local populace.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Squonk</td>
+							<td>
+								<p class="ddp1">Mayhap it's because these floating islands have been cut off from the world for so long, but the Sea of Clouds seems to have more than its fair share of curious creatures─and they don't come much curiouser than the paissa.</p>
+								<p class="ddp1">They're mischievous critters with wild, staring eyes, who seem to be in a constant state of agitation. Still, they're no match for a Clansman─all apart from their leader, the dreaded Squonk.</p>
+								<p class="ddp1">I don't know whether it's because he's unusually clever, or especially quick, but he's succeeded in pulling the Rose Knights' breeches down on more than one occasion. Whenever aught of import goes missing from the Rosehouse, you can be sure that Squonk isn't far away.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Sanu Vali of Dancing Wings</td>
+							<td>
+								<p class="ddp1">The Vanu Vanu are a beast tribe native to the Sea of Clouds, and they're not short of a few decent hunters and fighters.</p>
+								<p class="ddp1">Sanu Vali's one of their best and brightest─a Vanu warrior who wields her twin blades to such devastating effect, her compatriots revere her as a force of nature. The Rose Knights who often come into conflict with the birdmen hold her in equal and opposite regard.</p>
+								<p class="ddp1">The Vanu are wont to put on something of a show before they enter battle, and it's the graceful majesty of Sanu Vali's own war dance that has earned her the moniker "of Dancing Wings." That said, the only "wings" you'll need to worry about are the steel ones she holds in her claws.</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Azys Lla</div>
+								from Aytienne of Ishgard in The Forgotten Knight
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Leucrotta</td>
+							<td>
+								<p class="ddp1">The southern continent of Meracydia was a land of dragons. The monsters came in all shapes and sizes, each species evolving to fit into its own particular habitat.</p>
+								<p class="ddp1">Take the coeurl dragon─a beast that made its home in the Meracydian jungles. It started off as a dragon like any other, but over time it lost its wings, being next to useless in the thick brush, and gained the flexible body and muscular limbs of a coeurl.</p>
+								<p class="ddp1">They were fierce hunters and scavengers, driven into a feeding frenzy the moment they caught scent of beast blood. The merchant who posted the bill reckons one of these beasts, a coeurl dragon by the name of Leucrotta, is up in the clouds right now, living on an abandoned Allagan island.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Campacti</td>
+							<td>
+								<p class="ddp1">As the sun set on the Allagan Empire, they made their last big land grab─they invaded the southern continent of Meracydia, capturing scores of dragons and subjecting them to barbarous procedures that bent the creatures to their will.</p>
+								<p class="ddp1">Or so the merchant who set the bounty believes. I don't know whether there's any truth in her stories, but if the technology to control dragons really does exist, I'd wager there's a fair few people in this world who'd gladly give every appendage to learn the secret.</p>
+								<p class="ddp1">It seems this "Campacti" has turned up in her research as one such slave-dragon. No doubt the merchant's thinking it'll be easier to pick apart once it's been put out of its misery.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Stench Blossom</td>
+							<td>
+								<p class="ddp1">Yep, you heard that right─we've put a bounty on a flower. 'Course, it's not just any flower. It's not just any mark, neither. Only the most fearsome bits of shrubbery get given elite mark status.</p>
+								<p class="ddp1">The stench blossom's a monstrous man-eating plant that's long been extinct in Eorzea, but this merchant's got it on good authority they're still up there on the Allagans' floating island. ...If you count the whisperings of a pebble as "good authority."</p>
+								<p class="ddp1">Still, if those monstrosities really are up there, and their spores were ever blown down on the wind and took root in Eorzea again... Well, it doesn't bear thinking about. If there's any chance she's right, whoever destroyed that plant would be doing the world a great service.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Lycidas</td>
+							<td>
+								<p class="ddp1">This merchant's got it in her head that there's an enormous man-made island somewhere in the Sea of Clouds. It was built by the Allagan Empire as a base for their bizarre experiments, and it's still up there, teeming with the horrors their unholy tamperings gave birth to.</p>
+								<p class="ddp1">One of the Allagans' favorite pastimes was to splice bits of different monsters together, creating godsforsaken chimeras to set upon their enemies. But it wasn't just beasts they tampered with─they had their wicked way with the beastmen, too.</p>
+								<p class="ddp1">This merchant claims to have found a record of one of these experiments─they took a lizardman from the southern shores of Aldenard and crossed it with a vicious scalekin from across the Sea of Ash. The abomination that resulted from this unhappy union they christened "Lycidas."</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Omni</td>
+							<td>
+								<p class="ddp1">Histories tell that in the dying days of the Allagan Empire, uprisings occurred one after the other in every corner of their vast territory.</p>
+								<p class="ddp1">The imperial army came up with a plan both to suppress these insurrections and stave off revolt from within─they'd build an army of automata that would never disobey their masters' orders. And where better to station these soldiers than their magical flying fortress?</p>
+								<p class="ddp1">It's the captain of these automata, "Omni," the merchant's got it in for. No doubt this incorruptible defender of Allag wouldn't take too kindly to the adventurers she's trusting to strip this floating island of all it's worth and sell it to her for a pittance!</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">The Dravanian Forelands</div>
+								from Fhilskaet of Tailfeather
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Senmurv</td>
+							<td>
+								<p class="ddp1">'Ave ye ever set yer eyes on a griffin, Retah? They're 'alf eagle, 'alf lion, an' all 'unter. Just like a chocobo trapper, they stalk their prey from the shadows─or in their case the clouds─waitin' fer the perfect time to strike.</p>
+								<p class="ddp1">The chocobo 'unters o' Tailfeather've got a certain credo about pickin' when to spring the trap─"'unt the 'unter," they say. Whatever quarry yer after, ye stand a better chance o' catchin' it unawares if it's busy tryin' to catch its own prey.</p>
+								<p class="ddp1">Seems it's a motto ol' Senmurv's taken to 'eart. Whenever a group of 'ungry beasts 'eads out on the 'unt, the king o' the griffins'll swoop down from the sky an' carry off as many as 'is beak'll 'old.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Lord of the Wyverns</td>
+							<td>
+								<p class="ddp1">It's a better man than me that can tell one dragonling from the next, but they grow into all different shapes an' sizes. Take wyverns─they start off like any other dragon, but as they age their wings get bigger an' bigger, till they're spendin' all their time in the air.</p>
+								<p class="ddp1">They ain't no match fer their four-legged friends when it comes to brute strength, but what they lack in muscle, they make up fer in mobility. A mob o' the buggers can easily bring down an airship if they set their minds to it.</p>
+								<p class="ddp1">Ye'd think that speed would drop off with age, but no such luck. The eldest o' their number, the Lord o' the Wyverns, can twist an' turn like no other, duckin' an' divin' out the way o' dragonslayer shells. Small wonder the airship captains want the bastard dead.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Pylrastor</td>
+							<td>
+								<p class="ddp1">Might not look it at first glance, but that Sohm Al's an active volcano. I've 'eard tell there's a vast cave in the foothills that goes right into the belly o' the mountain, a place filled with fire an' brimstone like somethin' out o' the seventh 'ell.</p>
+								<p class="ddp1">'Course, it's a paradise fer cold-blooded scalekin. By all accounts there's a load o' the buggers down there in the deep─primitive lizards in thrall to the dragons.</p>
+								<p class="ddp1">There's one o' their kind ye've got to be especially wary of─an ancient archaeosaur by the name o' Pylraster. Some say 'e's almost as dangerous as the dragons themselves.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Thextera</td>
+							<td>
+								<p class="ddp1">Ye'll 'ave seen them bandersnatches prowlin' about off to the north, right? Well, there's one o' their number that's been causin' the chocobo 'unters such a ball ache they've put a bounty on its 'ead.</p>
+								<p class="ddp1">Instead of 'untin' fer chocobos like a good little bandersnatch, this Thextera's been takin' 'is meals from the trade caravans plyin' the trail 'twixt Tailfeather an' Ishgard.</p>
+								<p class="ddp1">Those caravans bring in the supplies the 'unters need to survive, an' carry back the chocobos they catch to be sold at market. The beast's been 'elpin' 'imself to a bit o' both, an' the drivers beside. If the caravans are Tailfeather's lifeblood, then Thextera's the knife in its neck.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Gnath Cometdrone</td>
+							<td>
+								<p class="ddp1">Time was the Gnath kept 'emselves to 'emselves, too wary o' the dragons to ever stray far from their own lands. Past few moons, though, the overgrown ladybugs look like they've finally grown a bit o' backbone.</p>
+								<p class="ddp1">They used to only use them muskets o' theirs to 'unt fer food, but o' late they've been turnin' 'em on anyone unlucky enough to stray into what they reckon to be "Gnath territory."</p>
+								<p class="ddp1">Judgin' from the number o' chocobo 'unters comin' back to Tailfeather with a back full o' buckshot, it seems that includes any place in the range o' their boomsticks. Someone's got to get rid o' that sniper o' theirs before it's too late.</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">The Dravanian Hinterlands</div>
+								from Yloise of Idlyshire
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>The Pale Rider</td>
+							<td>
+								<p class="ddp1">Another request sent by a Sharlayan scholar from the safety of his homeland. The fellow's uncovered an ancient prophecy, saying that in the end of days, a deathly knight will rise from the grave and bring death and destruction to Dravania atop an ashen steed.</p>
+								<p class="ddp1">If the scholar is right, and this "end of days" does indeed refer to the Seventh Umbral Calamity, then this supernatural horseman should already be among us, but I don't see any death and destruction around here. Well, no more than normal, anyway...</p>
+								<p class="ddp1">Honestly, I think it's all a pile of chocobo plop. There was an adventurer passed through the other day, said she'd seen a headless horseman out in the hinterlands when she was hunting for treasure...but believe you me, you can trust those looters as far as you can throw them!</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Slipkinx Steeljoints</td>
+							<td>
+								<p class="ddp1">Have you heard of the Illuminati? They're a secretive fraternity of goblin scholars who are particularly active in this area, engaging in experiments that run the gamut from the unusual to the downright unnatural.</p>
+								<p class="ddp1">Slipkinx Steeljoints's studies fall towards the latter end of the spectrum. He's a notorious scoundrel who thinks nothing of slaughtering innocents to test the effectiveness of his experimental weaponry.</p>
+								<p class="ddp1">The brute dresses himself in a suit of mechanical armor that is nigh on impenetrable, and sets about passersby with technologically enhanced gusto. Honestly, these scholars are completely incorrigible.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Stolas</td>
+							<td>
+								<p class="ddp1">You'll never guess who put the bounty on Stolas's head─it was sent by a Sharlayan astrologian, all the way from his homeland across the seas.</p>
+								<p class="ddp1">He lived here before the exodus, conducting his scholarly experiments. In one such trial, he used his magicks to bind an owl to him as a familiar. The test succeeded, but by some quirk of fate, the owl gained a prodigious intelligence, outstripping even that of its master.</p>
+								<p class="ddp1">But when the exodus came, the owl revolted. It attacked its master, stole a tome of forbidden knowledge, and escaped into the hinterlands. It seems the tome contains secrets of such cataclysmic power that, for the safety of the realm, this owl cannot be suffered to live.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>False Gigantopithecus</td>
+							<td>
+								<p class="ddp1">Time and again, the residents of Idyllshire have come under attack from a huge, hairy beastkin─imagine if you crossed a Roegadyn with an opo-opo, and had it row a ten-tonze galley for a twelvemoon.</p>
+								<p class="ddp1">I scoured the Sharlayan annals for a record of such a monster, and finally found it─it's a gigantopithecus, a fierce beast discovered on the tropical jungles of the Cieldalaes.</p>
+								<p class="ddp1">It was brought here as a youngling by a Sharlayan scholar, who raised it in a specially constructed glasshouse in some vain attempt to research its ecology. But when the exodus came, the callow whelp didn't think of taking his pet with him. Now it falls to the Clan to pick up the pieces.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Pterygotus</td>
+							<td>
+								<p class="ddp1">The Thaliak River is a shining symbol of the Dravanian hinterlands─the great mother who blesses the land with the gift of water.</p>
+								<p class="ddp1">But where the gentle and generous mother brings life, the cruel and merciless father─an oversized crustacean who rules over the Thaliak with an iron claw─brings only death.</p>
+								<p class="ddp1">The great glutton will pounce on anything that moves, and chop up his prey with his tail pincers faster than you can say "ouch." If you don't keep an eye on that tail of his, you'll be feeding the fishes in bite-sized chunks.</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">The Churning Mists</div>
+								from Eustacia of Ishgard outside The Forgotten Knight
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Gandarewa</td>
+							<td>
+								<p class="ddp1">It isn't only the dragons who have brought heretics into our midst, you know. Five hundred years ago, another heretical sect gained traction among the smallfolk of Ishgard.</p>
+								<p class="ddp1">The heathens adopted the customs of the Near East, bathing themselves in perfumes brewed from strange flowers and forging idols from rare metals that they used in their bizarre and unholy rites.</p>
+								<p class="ddp1">Naturally, the Temple Knights were quick to clamp down on the sect's activities. Its leader, a peasant who styled himself the great guru Gandarewa, fled to the next holiest place he knew─the sacred mountain of Dravania. There he supped on the blood of a dragon, and was forever changed...</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Agathos</td>
+							<td>
+								<p class="ddp1">Do you know the story of Saint Valeroyant? Eight centuries ago, he served as an Azure Dragoon, and won glory by driving away the great wyrm Nidhogg. This very square still bears his name, though his image has seen better days.</p>
+								<p class="ddp1">He was an unrivaled warrior who dealt death to dragon after dragon, but there was one that always managed to slip his clutches─Agathos, feared across the land as the Black Death.</p>
+								<p class="ddp1">Naught has been seen of the creature since Valeroyant's passing, but in recent years, rumors have been spreading of a shadow of Agathos's size and shape appearing in the clouds above Dravania. Could this be our chance to bring Saint Valeroyant's legend to a close?</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Bune</td>
+							<td>
+								<p class="ddp1">Most heretics are drawn from common stock, but there are more than a few nobles among them too. One such fellow was the husband of a lady Temple Knight─unbeknownst to her, he abused his position to steal the order's secrets and feed them to the dragons.</p>
+								<p class="ddp1">For years the nobleman passed sensitive information to the Horde, until the day he grew weary of his double life and supped from the scaly cup, transforming himself into a monstrous scalekin. His plan was simple─to slaughter his family, feign his own death, and join with the dragons.</p>
+								<p class="ddp1">Thanks to the timely intervention of the order, the former parts of his plan were foiled, but the beast broke their cordon and succeeded in fleeing to Dravania. It was one of the Temple Knights who put the bounty on his head─the very lady who was once his wife.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Scitalis</td>
+							<td>
+								<p class="ddp1">As wyverns grow, they progress through a number of developmental stages, their bodies becoming more and more streamlined with each change. In their final forms, even their horns drop off, leaving them with a sleek shape perfectly suited for flight.</p>
+								<p class="ddp1">It is one such elder wyvern that has been marked for death by a certain nobleman. It seems the beast has taken something of a fancy to the fellow's son─a pretty young thing I wouldn't mind gobbling up myself. Mayhap not in the same manner as the wyvern, though...</p>
+								<p class="ddp1">You should be able to spot this monster easily enough─its sleek, shining scales have earned it the name "Scitalis," after a legendary dragon with similarly lustrous skin.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>The Scarecrow</td>
+							<td>
+								<p class="ddp1">Not long ago, a party of Temple Knights headed into the foothills of Sohm Al to spy on the dragons' activities. However, a few days into their mission, they disappeared without a trace. A rescue party was dispatched to find the missing knights, and find them it did.</p>
+								<p class="ddp1">They discovered their missing comrades standing over the body of a vinegaroon─a fearsome scalekin in thrall to the dragons. But as they approached, the monster suddenly rose to its feet and sprang at the would-be rescuers, slaying several before they could ready themselves.</p>
+								<p class="ddp1">The Temple Knights were all dead─the Scarecrow had propped up their corpses to lure their rescuers into a trap. After taking its toll on the rescue party, the monster fled up the slopes of Sohm Al, and naught has been seen of it since. We believe it may yet be hiding in the Churning Mists.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dtop" colspan="2"><a href="#Top">Return to Top</a></td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table class="tnvb" id="arealmreborn">
+						<tr id="desdisplay1">
+							<td class="markcnt1"><a href="#shadowbringers"><button class="rgbtn">Shadowbringers</button></a></td>
+							<td class="markcnt2"><a href="#stormblood"><button class="rgbtn">Stormblood</button></a></td>
+							<td class="markcnt2"><a href="#heavensward"><button class="rgbtn">Heavensward</button></a></td>
+							<td class="markcnt3"><a href="#arealmreborn" ><button class="rgbtn">A Realm Reborn</button></a></td>
+						</tr>
+						<tr id="desdisplay2">
+							<td class="markcnt1"><a href="#shadowbringers"><button class="rgbtn">5.0</button></a></td>
+							<td class="markcnt2"><a href="#stormblood"><button class="rgbtn">4.0</button></a></td>
+							<td class="markcnt2"><a href="#heavensward"><button class="rgbtn">3.0</button></a></td>
+							<td class="markcnt3"><a href="#arealmreborn" ><button class="rgbtn" >2.0</button></a></td>
+						</tr>
+					</table>
+					<table>
+						<tr class="tr0">
+							<th colspan="2">A Realm Reborn</th>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Middle La Noscea</div>
+								from the Hunter-Scholar of Summerford
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Croque-Mitaine</td>
+							<td>
+								<p class="ddp1">"While gardening has long been a craft rich in obsession and madness, the goobbue Croque-mitaine has taken the legacy to new extremes...</p>
+								<p class="ddp1">"From the river whose water irrigates the artful plantings upon his head to the pastures rich in worm castings, the creature keeps a jealous eye on the many wild places that supply his cephalic paradise.</p>
+								<p class="ddp1">"Many an unwary orchid hunter, vermicomposter, and moss monger seeking rich loam have met their end at Croque-mitaine's hands, and his green thumb is well stained with their life's blood."</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Vogaal Ja</td>
+							<td>
+								<p class="ddp1">"Vogaal Ja, a Mamool Ja sellsword of particularly ill repute. Known to be as cruel as he is suspicious, and as suspicious as he is displeasing to the eye."</p>
+								<p class="ddp1">A real prince among men, this one. Can't get work on account of seein' every order as a way to get him killed, but claims it's because he's ugly-like. That part at least makes sense, but how that gives him the right to hack folks to bits, he's a mite fuzzy on.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Skogs Fru</td>
+							<td>
+								<p class="ddp1">"The ravening queen of ladybugs, Skogs Fru's natural voracity for pests has taken an unnatural turn.</p>
+								<p class="ddp1">"Not content with emptying the fields of pollen carriers and soil tillers, the adamantine-shelled Skogs Fru has adopted a new diet consisting of chocobos and their riders."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Lower La Noscea</div>
+								from the Hunter-Scholar of Moraby Drydocks
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Croakadile</td>
+							<td>
+								<p class="ddp1">"Frogs of inconvenient size are legion, but surprisingly few of them seek fodder commensurate with their size. The Croakadile is one such unwelcome surprise.</p>
+								<p class="ddp1">"The first known victim during the present manifestation is reported to be a franklin who felt his ring slip off during a nightly walk with his lady.</p>
+								<p class="ddp1">"He turned back down the path, and his lady saw him reach down just as the moon took cover behind a cloud. When the moonlight returned, he had vanished."</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Unktehi</td>
+							<td>
+								<p class="ddp1">"Long have the superstitious coasters along Moraby Bay corrected their children with tales of Unktehi, the sea-dwelling eater of man-flesh.</p>
+								<p class="ddp1">"What was once considered a mere fancy of ignorant folk has proven disagreeably real, and Unktehi's excursions onto land have left the population fearful─and fewer."</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Barbastelle</td>
+							<td>
+								<p class="ddp1">"The vampire bat Barbastelle has many epithets, the only remotely flattering one being 'the laird of Blind Iron Mines.'</p>
+								<p class="ddp1">"While cattle mutilations are hardly any one creature's domain, experts are united in the view that the infamous mass draining of the herd at the Red Rooster Stead─the so-called 'Big Gulp'─is the work of Barbastelle."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Eastern La Noscea</div>
+								from the Hunter-Scholar of Costa del Sol
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>The Garlok</td>
+							<td>
+								<p class="ddp1">A monster long said to dwell in the eternal twilight of a cavern, the Garlok was but an idle tale for generations of Bloodshore's children.</p>
+								<p class="ddp1">"However, one child was ill content to be idle, and his name was Gegeruju, the Master of Costa del Sol. At his command, a party entered the cavern in search of the Garlok..."</p>
+								<p class="ddp1">Well, you get the idea. They found the beast slumbering sheltered from the rain, and they woke the damn thing up. Suffice to say it's more than a mite annoyed at being roused so rudely.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Hellsclaw</td>
+							<td>
+								<p class="ddp1">"Hellsclaw. So erratic yet bloody a swath has this piece of magitek cut across the region that it is suspected of being sadly afflicted in some way."</p>
+								<p class="ddp1">So much for the infallibility of Garlean technology, eh? Hard to be afraid of a wheel that needs truing, I know, but be careful all the same.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Bloody Mary</td>
+							<td>
+								<p class="ddp1">"Bloody Mary is oft cited as the example of an unstoppable force─Qiqirn gluttony─meeting an immovable object─maternal love. Such characterization would not pass muster beyond the confines of a winesink, however, and is known to provoke dissent even in those establishments.</p>
+								<p class="ddp1">"While Bloody Mary is indeed an apkallu whose eggs suffered Qiqirn predation, nesting hens as a rule do not spear a failed egg thief a score and a half times with their beaks, then proceed to bathe in their victim's blood."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Western La Noscea</div>
+						from the Hunter-Scholar of Aleport
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Bonnacon</td>
+							<td>
+								<p class="ddp1">"Once known as a mild and even affectionate beast, Bonnacon is afflicted with a fit that comes upon him like a caul of fire.</p>
+								<p class="ddp1">"Tossing his great head in torment and rage, this bull gores to death his unfortunate victims, many of them greengrocers. Phrontists have implicated a rare variety of vegetable─its smell, to be precise─in triggering the violent attack."</p>
+								<p class="ddp1">The Maelstrom should worry a mite less about fish and a mite more about these other creatures, if you ask me─the kind that's killing folk right now in western La Noscea, for example.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Nahn</td>
+							<td>
+								<p class="ddp1">"A native of the Indigo Deep, Nahn is a gargantuan man-eating crustacean. Its actual name is unpronounceable except under the crushing press of water.</p>
+								<p class="ddp1">"The Sahagin of the Sapsa Spawning Grounds are responsible for bringing Nahn to shore to serve as a living weapon against the Maelstrom and others inimical to the beastmen."</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Dark Helmet</td>
+							<td>
+								<p class="ddp1">"A hermit crab of less eremitic bent, Dark Helmet began its love affair with armor when it traded in its snail shell for some nameless Lalafell's helm.</p>
+								<p class="ddp1">"Its salvaging ways abandoned on the sands alongside outgrown and rusted headgear, Dark Helmet lives to acquire larger and finer heaumes─often still occupied by their former owners' grey matter.</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Upper La Noscea</div>
+								from the Hunter-Scholar of Camp Bronze Lake
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Nandi</td>
+							<td>
+								<p class="ddp1">"Called the Critic by cowering locals, Nandi uses its petrifying gaze to turn passing creatures into works of art for its perverse pleasure alone.</p>
+								<p class="ddp1">"Ever has this catoblepas haunted the mountains of Vylbrand, yoked by the weight of its gross head, prodding the stone paths conjured by its downcast eye."</p>
+								<p class="ddp1">Nothin' so dangerous as a stillborn artist, they say. Don't you go temptin' the wretch with good material─like odd company, if you know what I'm sayin'.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Marberry</td>
+							<td>
+								<p class="ddp1">"Of the scores of thaumaturges lost questing for the Wanderer's Palace, Maruta Noruta was perhaps the least remarkable. Aside from the Lalafellin adventurer's singular yet unflattering hat, little of him is remembered.</p>
+								<p class="ddp1">"It is likely he would have been entirely forgot were it not for the fact that his hat resurfaced soon after, upon the head of a tonberry painting the shores of Bronze Lake with the blood of adventurers."</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Myradrosh</td>
+							<td>
+								<p class="ddp1">"The nectar-eaters of Eorzea are partial to blooms of different hues. Red flowers such as Oschon roselles and raincatchers are the preferred feed of colibri.</p>
+								<p class="ddp1">"Being one such bird, Myradrosh became so fixated on that hue that it now sups from the reddest flower of them all─the still-warm flesh of other birds, beasts, and men."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Outer La Noscea</div>
+								from the Hunter-Scholar of Camp Overlook
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Chernobog</td>
+							<td>
+								<p class="ddp1">"In death does Chernobog find its purpose, and so the scent of corse flower is sweet to this creature.</p>
+						<p class="ddp1">"A stele unearthed at Nym records that Chernobog was summoned during the War of the Magi in the Fifth Astral Era, for the conquest of the Floating City.</p>
+								<p class="ddp1">"The ploy failed and Chernobog was bound at great cost, by the efforts of some two score phrontists of Nym. What broke the tethers is not known, though there are theories ranging from the Calamity to the humble weevil."</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Cornu</td>
+							<td>
+								<p class="ddp1">"Of the zu much is known, for their migration between Eorzea and the Near East provides many opportunities for observation.</p>
+								<p class="ddp1">"The vilest among these birds of prey is Cornu, which has made itself maddeningly scarce to learned eyes that would pry from it the secrets of its savage heart."</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Vuokho</td>
+							<td>
+								<p class="ddp1">"A bird feral is a deadly thing, and none more so than the condor Vuokho. Witnesses place him at the Nym Massacre, which consigned some of the finest naturalists of the day to a mean and early grave.</p>
+								<p class="ddp1">"What was not consumed on the spot, the murderous bird seized whole and took to its aery, even as the staunchest among the Maelstrom looked on helplessly, their eyes leaking at the horror."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Central Shroud</div>
+								from the Hunter-Scholar of Bentbranch Meadows
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Laideronnette</td>
+							<td>
+								<p class="ddp1">"Laideronnette, the red serpent of the glade. One of many monstrosities to manifest themselves following the Calamity, Laideronnette's attacks coincide with rainfall, a fact which demonologists deem significant.</p>
+								<p class="ddp1">"Most experts agree that the loathsome serpent is the residuum of Laideronnette the wainwright's red-haired daughter, who was orphaned in the Calamity and fell into grief both bitter and formless, given to shrieking that all the world should weep with her."</p>
+								<p class="ddp1">Colorful. All you need know is that a giant red serpent has been feeding on man-flesh in the forests. Best to put it out of its misery, don't you think?</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Forneus</td>
+							<td>
+								<p class="ddp1">"Forneus. While long believed to be naught but the stuff of fear-babes, sightings of the creature in these parts have been many though apocryphal, including those at the notorious Haukke Manor."</p>
+								<p class="ddp1">Well, it turned out that particular sighting was real enough. That dark demon has been making leaves red in the forest for a while. Beware Forneus, adventurer.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>White Joker</td>
+							<td>
+								<p class="ddp1">"White Joker. So called because of many innocents fatally charmed by this squirrel's distinct white coat.</p>
+								<p class="ddp1">"Thanks to predation by other rodents, only the fittest and most vicious of squirrels survive to adulthood."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">East Shroud</div>
+								from the Hunter-Scholar of Hawthorne Hut
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Wulgaru</td>
+							<td>
+								<p class="ddp1">"Wulgaru, the false tree. Not a few poachers have vanished after being bound overnight to this vampiric man-eater by unsuspecting Wood Wailers.</p>
+								<p class="ddp1">"Wulgaru is also drawn by noise and commotion, breaking its arboreal disguise to feast on the blood of its favorite prey: man."</p>
+								<p class="ddp1">In other words, go quietly and fight stealthily, adventurer. If a tree comes alive in the forest, you're not likely to notice until too late.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Melt</td>
+							<td>
+								<p class="ddp1">"Melt. Unfathomable in its concoction and unspeakable in its coagulation, this voidsent has its origins in a sylph's jest."</p>
+								<p class="ddp1">The codex speaks the truth, my young friend. Gaze overlong at its sucking tumescence and something inside you will die...and it's put me off flummery for good.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Stinging Sophie</td>
+							<td>
+								<p class="ddp1">"Stinging Sophie. Fattened on the honeybees of Fullflower Comb, this giant hornet inspires both disgust and complacency.</p>
+								<p class="ddp1">"Contrary to what its excess of embonpoint suggests, this grotesquerie is agile enough to evade its would-be slayers, and instead give them a deadly stitch with its needle-sharp stinger."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">South Shroud</div>
+								from the Hunter-Scholar of Camp Tranquil
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Mindflayer</td>
+							<td>
+								<p class="ddp1">"Mindflayers are major voidsents notable for their dealings with the remnants of the Lambs of Dalamud in the Black Shroud.</p>
+								<p class="ddp1">Of the twelve tiers of the voidsent hierarchy put forth by scholars, mindflayers fall into the fifth. They have a grisly penchant for sucking out the brains of men, their favored prey."</p>
+								<p class="ddp1">Most rumors are to be dismissed out of hand, yet this is not one of them. Moonless nights are when their rites grow the foulest. Only death and decay can chisel for them a foothold in this world. Walk with Menphina, adventurer, lest the hunter become the hunted.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Ghede Ti Malice</td>
+							<td>
+								<p class="ddp1">"The first among gremlins in saltiness of speech, Ghede Ti Malice finally lost its place in Amdapor after one too many contumelies."</p>
+								<p class="ddp1">Ghede Ti Malice wouldn't be the first to fall out with its gremlin mates. Thin skin and big mouths make for an uneasy combination.</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Monarch Ogrefly</td>
+							<td>
+								<p class="ddp1">"Monarch Ogrefly, the dread vilekin of the Lost City of Amdapor. The barrier that seals in its infestations is considered sound...</p>
+								<p class="ddp1">"...yet even the Gods' Quiver could not stop the monstrous Ogreflies from escaping with their deadly taint of mold and burrs."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">North Shroud</div>
+								from the Hunter-Scholar of Hyrstmill
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Thousand-cast Theda</td>
+							<td>
+								<p class="ddp1">"Botanists call Thousand-cast Theda as well grown a specimen of ochu as ever has been recorded in the North Shroud, but the foolishness of botanists is a fact well known and oft deplored.</p>
+								<p class="ddp1">"Most species of this carnivorous family of bindweed use scent to lure their insect prey. Theda, however, is a plant notably lacking in patience and has evolved tentacle-like vines to pluck fish from water, and grows outsized on its rich meals.</p>
+								<p class="ddp1">"Along with the fisherfolk of the Shroud, Thousand-cast Theda is the main predator of venomous stingrays. Theda's other favored prey is, coincidentally, the fisherfolk of the Shroud. Hunters suspect a connection, but the foolishness of hunters is a fact well known."</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Girtab</td>
+							<td>
+								<p class="ddp1">"Girtab, the mightiest among mites that ravage the North Shroud.</p>
+								<p class="ddp1">"Painstaking field observations have revealed that the Girtab prefers its prey fresh, and keeps a living larder of two- and four-legged meals artfully held fast in a web."</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Phecda</td>
+							<td>
+								<p class="ddp1">"A bear of unusual size from the distant heights of Abalathia's Spine, Phecda's southward migration has not been a happy one for the Black Shroud.</p>
+								<p class="ddp1">"Its uncouth appetite has emptied whole areas of the forest of edibles and game, and no hunter has returned with evidence of a cull─or returned at all. Phecda may be distinguished from its more peaceable cousins by the constant slick of blood upon its claws."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Western Thanalan</div>
+								from the Hunter-Scholar of Horizon
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Zona Seeker</td>
+							<td>
+								<p class="ddp1">"Few have seen Zona Seeker, such is the altitude it keeps in its deadly flight.</p>
+								<p class="ddp1">"Its elusiveness would trouble none but the most ardent scholars of airborne monstrosities, were it not for the many airships of Highwind Skyways lost to Zona Seeker's attacks."</p>
+								<p class="ddp1">The beast near landed on me once. That was a bit of a scare, let me tell you! Flashes of light draw it─must've been the brushed bronze pauldrons I was wearin'.</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Alectryon</td>
+							<td>
+								<p class="ddp1">"It is known that ziz hunt in pairs: the driver maneuvers the prey toward the ambusher, and both eat well that day.</p>
+								<p class="ddp1">"The elders say Alectryon never knew his place, and correct they were proven when his ambusher was found dead. The latter had starved while the self-styled lone hunter took the game by and for himself, leaving nary a gristle for the other ziz."</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Sewer Syrup</td>
+							<td>
+								<p class="ddp1">"Born in the full foulness of the effluent passed by Amajina & Sons' Copperbell Mines, the voidsent Sewer Syrup was so named by the less imaginative among even the fume-addled unfortunates that work the recently expanded mine.</p>
+								<p class="ddp1">"Containment attempts by the Stone Torches were foiled by the voidsent's acrid stink. So powerful was the stench that it laid low many of the militiamen, and others still weep blood-tinged tears."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Central Thanalan</div>
+								from the Hunter-Scholar of Black Brush Station
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Brontes</td>
+							<td>
+								<p class="ddp1">"One of a pair of cyclopes captured several years ago on Vylbrand by the Adventurers' Guild and subsequently separated.</p>
+								<p class="ddp1">"Brontes was sold to an Ul'dahn circus, where he proved a prize draw, and never more so than on his last day, when he slew two of his keepers over a haunch of venison barded in flare fat before escaping.</p>
+								<p class="ddp1">"Having learned the joys of enlightened cuisine during his captivity, the cyclops is drawn by the aroma of fine comestibles, much to the terror of culinarians."</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Sabotender Bailarina</td>
+							<td>
+								<p class="ddp1">"Sabotender Bailarina blooms but once every two score years. The flower is remarkable less for its appearance, which is pedestrian enough, and more for its fragrance.</p>
+								<p class="ddp1">"The scent has been described by naturalists as an olfactory equivalent of fingernails on slate, and sends sabotenders into violent frenzy. Whether the effect arises from discomfort or lust is unknown."</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Ovjang</td>
+							<td>
+								<p class="ddp1">"Ovjang. A mammet of some antiquity, last in possession of a wealthy collector who suffered from a particularly virulent case of buyer's remorse.</p>
+								<p class="ddp1">"He ordered the mammet disassembled and sold off for parts. However, once under the chisel, the mammet came to and attacked the smith, wounding her badly before making its escape."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Eastern Thanalan</div>
+								from the Hunter-Scholar of Camp Drybone
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Lampalagua</td>
+							<td>
+								<p class="ddp1">"Lampalagua. A dragon of many heads, cage-born and stadium-bred. His escape en route to the Coliseum was a major embarrassment for his handlers, or more precisely, to their heirs.</p>
+								<p class="ddp1">"Each head having been blooded as a hatchling, Lampalagua is exceptionally barbarous and exquisitely attuned to the bloodlust of the crowd.</p>
+								<p class="ddp1">"Lacking a conventional audience in the wilds of eastern Thanalan, Lampalagua has instead taken to appearing wherever violent business is afoot."</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Maahes</td>
+							<td>
+								<p class="ddp1">"While Halatali is a cultural institution of note, it has also been less than perfect in keeping track of the fighting beasts it starves into greater savagery.</p>
+								<p class="ddp1">"Maahes is an object lesson. The blood meant for spilling on stadium sands has instead grown richer, feeding on the flesh of caravaneers."</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Gatling</td>
+							<td>
+								<p class="ddp1">"Gatling. A hedgemole of exceptionally bad temper who makes free with the lichyard of the Church of Saint Adama Landama.</p>
+								<p class="ddp1">"He has been thus dubbed for taking up residence in the tomb of Gatling the Alchemical Smith. If the creature has a true name, it remains unknown and of no great interest to local folk."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Southern Thanalan</div>
+								from the Hunter-Scholar of Little Ala Mhigo
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Nunyunuwi</td>
+							<td>
+								<p class="ddp1">"The large population of golems in southern Thanalan is ascribed by mainstream historians to the mages of Belah'dia, who made the sturdy guardians for the protection of the Temple of Qarn.</p>
+								<p class="ddp1">"Among these sad remnants of a civilization lost to time, Nunyunuwi stands out for his exceptional size and stealth.</p>
+								<p class="ddp1">"At rest, he vanishes into the landscape of tors and boulders. Only an outbreak of sizable chaos and bloodshed will rouse the stone soldier to his ancient duty: to fight to the death."</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Zanig'oh</td>
+							<td>
+								<p class="ddp1">"Zanig'oh. A drake altered by an Amalj'aa alchemist for no less a purpose than the conquest of Ul'dah.</p>
+								<p class="ddp1">"In addition to magic powers conferred by runes graven into its very flesh, the drake has a taste for melee combat, ably provoked into violence by inwardly spiked bangles affixed to all four limbs."</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Albin the Ashen</td>
+							<td>
+								<p class="ddp1">"When the Hyuran tribe came to Thanalan some eight hundred years ago, Albin the Ashen was at the head of one of the columns.</p>
+								<p class="ddp1">"Then-native Belah'dians rose against the invaders and prevailed, as history records. Albin was but one of many slain in the abortive conquest, yet his mortal coil still roams the land in search of vengeance."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Northern Thanalan</div>
+								from the Hunter-Scholar of Ceruleum Processing Plant
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Minhocao</td>
+							<td>
+								<p class="ddp1">Ah, yes, the sandworm. Large concerns like Amajina & Sons don't give a toss about the commonfolk being ambushed and eaten. But a sandworm attacking their convoy─we can't have that!</p>
+								<p class="ddp1">"...Sightings of Minhocao have long been reported near deposits and mines, particularly those that hold quantities of ceruleum. Alchemically similar to the sandworms' foremilk, the catalyst is a food source for the great worms.</p>
+								<p class="ddp1">"However, any attempt to lure Minhocao to the surface with the use of edible bait would necessitate very large quantities of food."</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Dalvag's Final Flame</td>
+							<td>
+								<p class="ddp1">"Much is told of the corpse-soldier, Flame Sergeant Dalvag, yet mainstream scholarship has lagged woefully on the matter of what became of the rest of him.</p>
+								<p class="ddp1">"Efforts by hunter-scholars with intimate knowledge of northern Thanalan have resulted in persuasive identification of a malevolent local demon as the late sergeant's spirit."</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Flame Sergeant Dalvag</td>
+							<td>
+								<p class="ddp1">"Flame Sergeant Dalvag was among the thousands of defenders who met the Garlean invasion force in northern Thanalan soon after the Calamity. His company was ill placed to hold their position, yet given strict orders not to retreat.</p>
+								<p class="ddp1">"Many fell, and suffered much in the falling. Multiple witnesses attest that Dalvag was the last of the company and fought as a man possessed till the end, the names of the dead tumbling in hoarse barks through cracked lips. Scholars theorize that his mortal remains are animated by a thirst for vengeance alone."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Mor Dhona</div>
+								from the Hunter-Scholar of Revenant's Toll
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">S Rank<hr>Agrippa the Mighty</td>
+							<td>
+								<p class="ddp1">"Agrippa. This magitek colossus is the newest of its kind and appears to have been designed as an anti-adventurer countermeasure.</p>
+								<p class="ddp1">"While the name is believed to be a tribute to an actual Garlean, no record of a likely honoree has been found."</p>
+								<p class="ddp1">Ye'll want to be on yer toes in Mor Dhona. There was an adventurer huntin' for treasures an' the colossus mauled her somethin' fierce. Hard to kill a woman, though, hah! We die hard, ye know!</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">A Rank<hr>Kurrea</td>
+							<td>
+								<p class="ddp1">"A particularly savage specimen of the unnatural creatures that inhabit both water and land, Kurrea was once a mere nuisance known for purloining game brought down by hunters.</p>
+								<p class="ddp1">"Amphibious beasts having an ingrained tendency to have ideas above their station, Kurrea soon took to attacking and feeding on the hunters. The flaccid, nerveless quality of its skin makes it proof against all but the most powerful thrusts of the blade."</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">B Rank<hr>Leech King</td>
+							<td>
+								<p class="ddp1">"Leech King of Silvertear Falls, so dubbed by the Sons of Saint Coinach for its enormous size rather than any perceived system of sovereignty.</p>
+								<p class="ddp1">"Those who make mock of its grossness soon repent, for the Leech King is nimble where a meal of blood is concerned."</p>
+							</td>
+						</tr>
+						<tr class="tr1">
+							<td class="dtz1" colspan="2">
+								<div class="dtz2">Coerthas Central Highlands</div>
+								from the Hunter-Scholar of Camp Dragonhead
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">S Rank<hr>Safat</td>
+							<td>
+								<p class="ddp1">"A winning combination of size and agility, the dragon Safat spends much of its time winging its way through the Sea of Clouds.</p>
+								<p class="ddp1">"A scream or two, however, never fails to bring Safat streaking down to its prey, attuned as the beast is to terror and misery.</p>
+								<p class="ddp1">"Some hunters have been known to subject themselves to hair-raising experiences in order to bait the dragon. Results have been mixed."</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dmark">A Rank<hr>Marraco</td>
+							<td>
+								<p class="ddp1">Every High House of Ishgard has its own dragon in a bonnet, don't they? An enemy without keeps order within. The dragon Marraco is to be hunted for the crime of mistaking almost a dozen of House Durendaire's knights for kindling.</p>
+								<p class="ddp1">"An impressive physical specimen by all accounts, the dragon Marraco can easily withstand a direct hit from dragonslayer cannons, thus requiring enterprising hunters to exercise some forethought in their choice of arms."</p>
+							</td>
+						</tr>
+						<tr class="tr3">
+							<td class="dmark">B Rank<hr>Naul</td>
+							<td>
+								<p class="ddp1">Ah, yes. You know how Ishgard is about dragons. The Holy See managed to get Naul and a few other dragons on to the elite mark list. A favor to be repaid in kind, I'm sure.</p>
+								<p class="ddp1">"The dragons Naul and Svara are best known for their attack on the Steel Vigil, which left the fortress a smoking ruin. Notable casualties include the third son of House Haillenarte..."</p>
+							</td>
+						</tr>
+						<tr class="tr2">
+							<td class="dtop" colspan="2"><a href="#Top">Return to Top</a></td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+			<div id="huntcnt3">
+			<br>
+				<div class="huntbuttons">
+					<a href="#Top"><button class="rgbtn">Top</button></a>
+					<a href="#srank"><button class="rgbtnoff">S Rank</button></a>
+					<a href="#arank"><button class="rgbtnoff">A Rank</button></a>
+					<a href="#sfate"><button class="rgbtnoff">S Fate</button></a>
+					<a href="#other"><button class="rgbtnoff">Other</button></a>
+				</div>
+				<br>
+				<div class="huntbox">
+					<h2 class="h2border">Basic Text Commands</h2>
+
+<pre>
+&lt;flag&gt; - Links selected map location
+&lt;pos&gt; - Links your current position
+&lt;t&gt; - Links your current target
+/fc - Sends message to FC chat
+/p - Sends message to Party chat
+/sh - Sends message to Shout chat
+/l1 - Sends message to linkshell 1.  Change number for different linkshells.
+/cwl1 - Sends message to crossworld linkshell 1.  Change number for different CW linkshells.
+</pre>
+
+				</div>
+				<br>
+				<div id="srank" class="huntbuttons">
+					<a href="#Top"><button class="rgbtnoff">Top</button></a>
+					<a href="#srank"><button class="rgbtn">S Rank</button></a>
+					<a href="#arank"><button class="rgbtnoff">A Rank</button></a>
+					<a href="#sfate"><button class="rgbtnoff">S Fate</button></a>
+					<a href="#other"><button class="rgbtnoff">Other</button></a>
+				</div>
+				<br>
+				<div class="huntbox">
+					<h2 class="h2border">S Rank Macros</h2>
+					<h3 class="h3border">S Rank Relink</h3>
+					<p class="macros">For linking a location from chat</p>
+
+<pre>
+/fc S Rank &lt;flag&gt;
+/p S Rank &lt;flag&gt;
+/l1 S Rank &lt;flag&gt;
+/l2 S Rank &lt;flag&gt;
+/l3 S Rank &lt;flag&gt;
+/l4 S Rank &lt;flag&gt;
+/l5 S Rank &lt;flag&gt;
+/l6 S Rank &lt;flag&gt;
+/l7 S Rank &lt;flag&gt;
+/l8 S Rank &lt;flag&gt;
+/cwl1 S Rank &lt;flag&gt;
+/cwl2 S Rank &lt;flag&gt;
+</pre>
+
+					<h3 class="h3borderb">S Rank Current Position</h3>
+					<p class="macros">For linking your current location</p>
+
+<pre>
+/fc S Rank &lt;pos&gt;
+/shout S Rank &lt;pos&gt;
+/p S Rank &lt;pos&gt;
+/l1 S Rank &lt;pos&gt;
+/l2 S Rank &lt;pos&gt;
+/l3 S Rank &lt;pos&gt;
+/l4 S Rank &lt;pos&gt;
+/l5 S Rank &lt;pos&gt;
+/l6 S Rank &lt;pos&gt;
+/l7 S Rank &lt;pos&gt;
+/l8 S Rank &lt;pos&gt;
+/cwl1 S Rank &lt;pos&gt;
+/cwl2 S Rank &lt;pos&gt;
+</pre>
+
+					<h3 class="h3borderb">S Rank POS + Target Name</h3>
+					<p class="macros">For linking your current location and target's name</p>
+
+<pre>
+/fc S Rank &lt;t&gt;&lt;pos&gt;
+/shout S Rank &lt;t&gt;&lt;pos&gt;
+/p S Rank &lt;t&gt;&lt;pos&gt;
+/l1 S Rank &lt;t&gt;&lt;pos&gt;
+/l2 S Rank &lt;t&gt;&lt;pos&gt;
+/l3 S Rank &lt;t&gt;&lt;pos&gt;
+/l4 S Rank &lt;t&gt;&lt;pos&gt;
+/l5 S Rank &lt;t&gt;&lt;pos&gt;
+/l6 S Rank &lt;t&gt;&lt;pos&gt;
+/l7 S Rank &lt;t&gt;&lt;pos&gt;
+/l8 S Rank &lt;t&gt;&lt;pos&gt;
+/cwl1 S Rank &lt;t&gt;&lt;pos&gt;
+/cwl2 S Rank &lt;t&gt;&lt;pos&gt;
+</pre>
+
+				</div>
+				<br>
+				<div id="arank" class="huntbuttons">
+					<a href="#Top"><button class="rgbtnoff">Top</button></a>
+					<a href="#srank"><button class="rgbtnoff">S Rank</button></a>
+					<a href="#arank"><button class="rgbtn">A Rank</button></a>
+					<a href="#sfate"><button class="rgbtnoff">S Fate</button></a>
+					<a href="#other"><button class="rgbtnoff">Other</button></a>
+				</div>
+				<br>
+				<div class="huntbox">
+					<h2 class="h2border">A Rank Macros</h2>
+					<h3 class="h3border">Hunt Train Relink</h3>
+
+<pre>
+/fc Hunt Train &lt;flag&gt;
+/p Hunt Train &lt;flag&gt;
+/l1 Hunt Train &lt;flag&gt;
+/l2 Hunt Train &lt;flag&gt;
+/l3 Hunt Train &lt;flag&gt;
+/l4 Hunt Train &lt;flag&gt;
+/l5 Hunt Train &lt;flag&gt;
+/l6 Hunt Train &lt;flag&gt;
+/l7 Hunt Train &lt;flag&gt;
+/l8 Hunt Train &lt;flag&gt;
+/cwl1 Hunt Train &lt;flag&gt;
+/cwl2 Hunt Train &lt;flag&gt;
+</pre>
+
+					<h3 class="h3borderb">Hunt Train Starting</h3>
+					<p class="macros">For announcing that a hunt train is starting and where.</p>
+
+<pre>
+/fc Hunt Train Starting Soon! &lt;flag&gt;
+/p Hunt Train Starting Soon! &lt;flag&gt;
+/l1 Hunt Train Starting Soon! &lt;flag&gt;
+/l2 Hunt Train Starting Soon! &lt;flag&gt;
+/l3 Hunt Train Starting Soon! &lt;flag&gt;
+/l4 Hunt Train Starting Soon! &lt;flag&gt;
+/l5 Hunt Train Starting Soon! &lt;flag&gt;
+/l6 Hunt Train Starting Soon! &lt;flag&gt;
+/l7 Hunt Train Starting Soon! &lt;flag&gt;
+/l8 Hunt Train Starting Soon! &lt;flag&gt;
+/cwl1 Hunt Train Starting Soon! &lt;flag&gt;
+/cwl2 Hunt Train Starting Soon! &lt;flag&gt;
+</pre>
+
+					<h3 class="h3borderb">Hunt Train Ending</h3>
+					<p class="macros">For announcing the final mark so late arrivals and conductors on other servers know your train is ending.  Helpful for other conductors to start their train when yours ends to chain them back to back.</p>
+
+<pre>
+/fc Hunt Train Final Mark! &lt;flag&gt;
+/p Hunt Train Final Mark! &lt;flag&gt;
+/l1 Hunt Train Final Mark! &lt;flag&gt;
+/l2 Hunt Train Final Mark! &lt;flag&gt;
+/l3 Hunt Train Final Mark! &lt;flag&gt;
+/l4 Hunt Train Final Mark! &lt;flag&gt;
+/l5 Hunt Train Final Mark! &lt;flag&gt;
+/l6 Hunt Train Final Mark! &lt;flag&gt;
+/l7 Hunt Train Final Mark! &lt;flag&gt;
+/l8 Hunt Train Final Mark! &lt;flag&gt;
+/cwl1 Hunt Train Final Mark! &lt;flag&gt;
+/cwl2 Hunt Train Final Mark! &lt;flag&gt;
+</pre>
+
+					<h3 class="h3borderb">A Rank Relink</h3>
+					<p class="macros">For linking a location from chat</p>
+
+<pre>
+/fc A Rank &lt;flag&gt;
+/p A Rank &lt;flag&gt;
+/l1 A Rank &lt;flag&gt;
+/l2 A Rank &lt;flag&gt;
+/l3 A Rank &lt;flag&gt;
+/l4 A Rank &lt;flag&gt;
+/l5 A Rank &lt;flag&gt;
+/l6 A Rank &lt;flag&gt;
+/l7 A Rank &lt;flag&gt;
+/l8 A Rank &lt;flag&gt;
+/cwl1 A Rank &lt;flag&gt;
+/cwl2 A Rank &lt;flag&gt;
+</pre>
+
+					<h3 class="h3borderb">A Rank Current Position</h3>
+					<p class="macros">For linking your current location</p>
+
+<pre>
+/fc A Rank &lt;pos&gt;
+/shout A Rank &lt;pos&gt;
+/p A Rank &lt;pos&gt;
+/l1 A Rank &lt;pos&gt;
+/l2 A Rank &lt;pos&gt;
+/l3 A Rank &lt;pos&gt;
+/l4 A Rank &lt;pos&gt;
+/l5 A Rank &lt;pos&gt;
+/l6 A Rank &lt;pos&gt;
+/l7 A Rank &lt;pos&gt;
+/l8 A Rank &lt;pos&gt;
+/cwl1 A Rank &lt;pos&gt;
+/cwl2 A Rank &lt;pos&gt;
+</pre>
+
+					<h3 class="h3borderb">A Rank POS + Target Name</h3>
+					<p class="macros">For linking your current location and target's name</p>
+
+<pre>
+/fc A Rank &lt;t&gt;&lt;pos&gt;
+/shout A Rank &lt;t&gt;&lt;pos&gt;
+/p A Rank &lt;t&gt;&lt;pos&gt;
+/l1 A Rank &lt;t&gt;&lt;pos&gt;
+/l2 A Rank &lt;t&gt;&lt;pos&gt;
+/l3 A Rank &lt;t&gt;&lt;pos&gt;
+/l4 A Rank &lt;t&gt;&lt;pos&gt;
+/l5 A Rank &lt;t&gt;&lt;pos&gt;
+/l6 A Rank &lt;t&gt;&lt;pos&gt;
+/l7 A Rank &lt;t&gt;&lt;pos&gt;
+/l8 A Rank &lt;t&gt;&lt;pos&gt;
+/cwl1 A Rank &lt;t&gt;&lt;pos&gt;
+/cwl2 A Rank &lt;t&gt;&lt;pos&gt;
+</pre>
+
+				</div>
+				<br>
+				<div id="sfate" class="huntbuttons">
+					<a href="#Top"><button class="rgbtnoff">Top</button></a>
+					<a href="#srank"><button class="rgbtnoff">S Rank</button></a>
+					<a href="#arank"><button class="rgbtnoff">A Rank</button></a>
+					<a href="#sfate"><button class="rgbtn">S Fate</button></a>
+					<a href="#other"><button class="rgbtnoff">Other</button></a>
+				</div>
+				<br>
+				<div class="huntbox">
+					<h2 class="h2border">Special Fate Macros</h2>
+					<h3 class="h3border">Special Fate Relink</h3>
+					<p class="macros">For linking a location from chat</p>
+
+<pre>
+/fc Special Fate &lt;flag&gt;
+/p Special Fate &lt;flag&gt;
+/l1 Special Fate &lt;flag&gt;
+/l2 Special Fate &lt;flag&gt;
+/l3 Special Fate &lt;flag&gt;
+/l4 Special Fate &lt;flag&gt;
+/l5 Special Fate &lt;flag&gt;
+/l6 Special Fate &lt;flag&gt;
+/l7 Special Fate &lt;flag&gt;
+/l8 Special Fate &lt;flag&gt;
+/cwl1 Special Fate &lt;flag&gt;
+/cwl2 Special Fate &lt;flag&gt;
+</pre>
+
+					<h3 class="h3borderb">Special Fate Current Position</h3>
+					<p class="macros">For linking your current location</p>
+
+<pre>
+/fc Special Fate &lt;pos&gt;
+/shout Special Fate &lt;pos&gt;
+/p Special Fate &lt;pos&gt;
+/l1 Special Fate &lt;pos&gt;
+/l2 Special Fate &lt;pos&gt;
+/l3 Special Fate &lt;pos&gt;
+/l4 Special Fate &lt;pos&gt;
+/l5 Special Fate &lt;pos&gt;
+/l6 Special Fate &lt;pos&gt;
+/l7 Special Fate &lt;pos&gt;
+/l8 Special Fate &lt;pos&gt;
+/cwl1 Special Fate &lt;pos&gt;
+/cwl2 Special Fate &lt;pos&gt;
+</pre>
+
+					<h3 class="h3borderb">Special Fate POS + Target Name</h3>
+					<p class="macros">For linking your current location and target's name</p>
+
+<pre>
+/fc Special Fate &lt;t&gt;&lt;pos&gt;
+/shout Special Fate &lt;t&gt;&lt;pos&gt;
+/p Special Fate &lt;t&gt;&lt;pos&gt;
+/l1 Special Fate &lt;t&gt;&lt;pos&gt;
+/l2 Special Fate &lt;t&gt;&lt;pos&gt;
+/l3 Special Fate &lt;t&gt;&lt;pos&gt;
+/l4 Special Fate &lt;t&gt;&lt;pos&gt;
+/l5 Special Fate &lt;t&gt;&lt;pos&gt;
+/l6 Special Fate &lt;t&gt;&lt;pos&gt;
+/l7 Special Fate &lt;t&gt;&lt;pos&gt;
+/l8 Special Fate &lt;t&gt;&lt;pos&gt;
+/cwl1 Special Fate &lt;t&gt;&lt;pos&gt;
+/cwl2 Special Fate &lt;t&gt;&lt;pos&gt;
+</pre>
+
+				</div>
+				<br>
+				<div id="other" class="huntbuttons">
+					<a href="#Top"><button class="rgbtnoff">Top</button></a>
+					<a href="#srank"><button class="rgbtnoff">S Rank</button></a>
+					<a href="#arank"><button class="rgbtnoff">A Rank</button></a>
+					<a href="#sfate"><button class="rgbtnoff">S Fate</button></a>
+					<a href="#other"><button class="rgbtn">Other</button></a>
+				</div>
+				<br>
+				<div class="huntbox">
+					<h2 class="h2border">Other Useful Macros</h2>
+					<h3 class="h3border">Hunt Train Scout</h3>
+					<p class="macros">Change "lX" to whichever linkshell needs to recieve your train scouting locations.  Be sure to remove any lines you don't want seeing the links to avoid early relinks.</p>
+
+<pre>
+/e &lt;t&gt;&lt;pos&gt;
+/p &lt;t&gt;&lt;pos&gt;
+/lX &lt;t&gt;&lt;pos&gt;
+/cwlX &lt;t&gt;&lt;pos&gt;
+</pre>
+
+					<h3 class="h3borderb">Echo Refresh</h3>
+					<p class="macros">To refresh your links to avoid losing them from your chat log</p>
+
+<pre>
+/e &lt;flag&gt;
+</pre>
+
+				</div>
+			</div>
+			<div id="huntcnt4">
+				<h3>What is "The Hunt" And How Useful Is It? by Mrhappy1227</h3>
+				<iframe class="huntvideo" src="https://www.youtube.com/embed/S7FStYmTgc0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h3>Salt and Light Tip by RetahGaming</h3>
+				<iframe class="huntvideo" src="https://www.youtube.com/embed/i30Aw-Z7nZY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</body>
+</html>

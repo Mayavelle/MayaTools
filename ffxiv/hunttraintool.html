@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FFXIV Hunt Train Tool</title>
+		<?php include "../include/rginclude.html";?>
+<link rel="stylesheet" type="text/css" href="ffxiv.css?version=23">
+<link rel="stylesheet" type="text/css" href="hunttraintool.css?version=23">
+<script src="ffxiv.JS?version=23" type="text/javascript"></script>
+<script src="hunttraintool.JS?version=23" type="text/javascript"></script>
+<style>
+:target::before {
+  content: "";
+  display: block;
+  height: 114px;
+  margin: -114px 0 0;
+}
+</style>
+</head>
+<body>
+<?php include "../include/topnav.html";?>
+	<div class="sticky2">
+		<table class="header1024">
+			<tr>
+				<td class="header"><button id="endbtn" class="rgbtn2" onclick="endToggle()">Endwalker</button> <button id="shbbtn" class="rgbtnoff" onclick="shbToggle()">Shadowbringers</button></td>
+			</tr>
+		</table>
+	</div>
+	<div id="httend">
+		<?php include "hunttraintool-6-endwalker.php";?>
+	</div>
+	<div id="httshb">
+		<?php include "hunttraintool-5-shadowbringers.php";?>
+	</div>
+	<div id="copytoast">Copied!</div>
+</body>
+	<?php 
+	if (isset($_GET["m"])) {
+		$code = $_GET["m"];
+	} else {
+		$code = "6------------";
+	}
+	echo "<script>";
+	echo "window.onload = codeimport('" . $code . "');";
+	echo "</script>";
+	?>
+</html>

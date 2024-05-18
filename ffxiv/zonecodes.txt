@@ -1,0 +1,35 @@
+a   middle LN
+b   lower LN
+c   eastern LN
+d   western LN
+e   upper LN
+f   outer LN
+g   central Shroud
+h   East Shroud
+i   South Shroud
+j   North Shroud
+k   Western Thanalan
+l   Central Thanalan
+m   Eastern Thanalan
+n   Southern Thanalan
+o   Northern Thanalan
+p   Mor Dhona
+q   Coerthas Central Highlands
+r   Coerthas Western Highlands
+s   The Sea of Clouds
+t   Azys Lla
+u   The Dravanian Forelands
+v   The Dravanian Hinterlands
+w   The Churning Mists
+x   The Fringes
+y   The Peaks
+z   The Lochs
+aa  The Ruby Sea
+ab  Yanxia
+ac  The Azim Steppe
+ad  18  Lakeland
+ae  Kholusia
+af  Ahm Araeng
+ag  Il Mheg
+ah  The Raktika Greatwood
+ai  The Tempest

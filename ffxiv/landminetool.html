@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, max-width=1024px, initial-scale=1.0">
+	<title>FFXIV Hunt Train Tool</title>
+	<?php include "../include/rginclude.html";?>
+	<link rel="stylesheet" type="text/css" href="ffxiv.css?version=23">
+	<link rel="stylesheet" type="text/css" href="hunttraintool.css?version=24.2">
+	<link rel="stylesheet" type="text/css" href="huntmaps.css?version=23.4">
+	<script src="ffxiv.JS?version=23" type="text/javascript"></script>
+	<script src="hunttraintool.JS?version=23.5" type="text/javascript"></script>
+	<script src="huntmaps.JS?version=23.2" type="text/javascript"></script>
+	<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+	<style>
+		:target::before {
+  		content: "";
+  		display: block;
+  		height: 114px;
+  		margin: -114px 0 0;
+		}
+	</style>
+</head>
+<body>
+<?php include "../include/topnav.html";?>
+<br>
+<div class="sticky2" id="dropdownmenu">
+	<div id="dropdown">
+		<div class="xpacname">
+			<button onclick="zoom_click()" id="zoombtn"><span class="iconify" data-icon="oi:zoom-in"></span>&#x25BE</button>
+		</div>
+		<div class="xpacnum">
+			<button onclick="zoom_click()" id="zoombtn"><span class="iconify" data-icon="oi:zoom-in"></span>&#x25BE</button>
+		</div>
+		<div class="dropdownxpac" id="dropdownzoom">
+			<a onclick="zoomlmt('1024px')">1x</a>
+			<a onclick="zoomlmt('768px')">0.75x</a>			
+			<a onclick="zoomlmt('512px')">0.5x</a>
+			<a onclick="zoomlmt('256px')">0.25x</a>
+		</div>
+	</div>
+	<div id="dropdown">
+		<div class="xpacname">
+			<button onclick="arealmreborn_click()" id="dropbtn">A Realm Reborn&#x25BE</button>
+		</div>
+		<div class="xpacnum">
+			<button onclick="arealmreborn_click()" id="dropbtn">ARR&#x25BE</button>
+		</div>
+		<div class="dropdownxpac" id="dropdownarr">
+			<a onclick="hidemenu2()">&nbsp&nbspUpper La Noscea</a>
+			<a onclick="ctToggle()">&nbsp&nbspCentral Thanalan</a>
+			<a onclick="llnToggle()">&nbsp&nbspLower La Noscea</a>
+			<a onclick="ssToggle()">&nbsp&nbspSouth Shroud</a>
+		</div>
+	</div>
+	<div id="dropdown">
+		<div class="xpacname">
+			<button onclick="heavensward_click()" id="dropbtn">Heavensward&#x25BE</button>
+		</div>
+		<div class="xpacnum">
+			<button onclick="heavensward_click()" id="dropbtn">HW&#x25BE</button>
+		</div>
+		<div class="dropdownxpac" id="dropdownhw">
+			<a onclick="cwhToggle()">Coerthas Western Highlands</a>
+		</div>
+	</div>
+	<div id="dropdown">
+		<div class="xpacname">
+			<button onclick="stormblood_click()" id="dropbtn">Stormblood&#x25BE</button>
+		</div>
+		<div class="xpacnum">
+			<button onclick="stormblood_click()" id="dropbtn">StB&#x25BE</button>
+		</div>
+		<div class="dropdownxpac" id="dropdownsb">
+			<a onclick="yanxiaToggle()">Yanxia</a>
+			<a onclick="azimToggle()">The Azim Steppe</a>
+		</div>
+	</div>
+	<div id="dropdown">
+		<div class="xpacname">
+			<button onclick="shadowbringers_click()" id="dropbtn">Shadowbringers&#x25BE</button>
+		</div>
+		<div class="xpacnum">
+			<button onclick="shadowbringers_click()" id="dropbtn">ShB&#x25BE</button>
+		</div>
+		<div class="dropdownxpac" id="dropdownsh">
+			<a onclick="ahmToggle()">Ahm Araeng</a>
+			<a onclick="mhegToggle()">Il Mheg</a>
+		</div>
+	</div>
+	<div id="dropdown">
+		<div class="xpacname">
+			<button onclick="endwalker_click()" id="dropbtn">Endwalker&#x25BE</button>
+		</div>
+		<div class="xpacnum">
+			<button onclick="endwalker_click()" id="dropbtn">END&#x25BE</button>
+		</div>
+		<div class="dropdownxpac" id="dropdownend">
+			<a onclick="garlToggle()">Garlemald</a>
+			<a onclick="garl2Toggle()">Garlemald 2</a>
+			<a onclick="garl3Toggle()">Garlemald 3</a>
+			<a onclick="ultimaToggle()">Ultima Thule</a>
+			<a onclick="ultima2Toggle()">Ultima Thule 2</a>
+			<a onclick="ultima3Toggle()">Ultima Thule 3</a>
+		</div>
+	</div>
+</div>
+	<br>
+	<div id="garlemald" class="zonecnt w1024">
+		<h2>Garlemald - Armstrong</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl0" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl1" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl4" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl5" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl6" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl7" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl8" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/end/garl.jpg" class="zone w1024">
+	</div>
+	<div id="garlemald2" class="zonecnt w1024">
+	<h2>Garlemald 2 - Armstrong</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl0i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl1i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl2i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl3i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl4i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl5i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl6i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl7i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl8i2" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/end/garl.jpg" class="zone w1024">
+	</div>
+	<div id="garlemald3" class="zonecnt w1024">
+	<h2>Garlemald 3 - Armstrong</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl0i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl1i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl2i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl3i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl4i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl5i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl6i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl7i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="garl8i3" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/end/garl.jpg" class="zone w1024">
+	</div>
+	<div id="ultimathule" class="zonecnt w1024">
+	<h2>Ultima Thule - Narrow-rift</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima0" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima1" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima4" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima5" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima6" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima7" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima8" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/end/ultima.jpg" class="zone w1024">
+	</div>
+	<div id="ultimathule2" class="zonecnt w1024">
+	<h2>Ultima Thule 2 - Narrow-rift</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima0i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima1i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima2i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima3i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima4i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima5i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima6i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima7i2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima8i2" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/end/ultima.jpg" class="zone w1024">
+	</div>
+	<div id="ultimathule3" class="zonecnt w1024">
+	<h2>Ultima Thule 3 - Narrow-rift</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima0i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima1i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima2i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima3i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima4i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima5i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima6i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima7i3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ultima8i3" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/end/ultima.jpg" class="zone w1024">
+	</div>
+	<div id="ilmheg" class="zonecnt w1024">
+	<h2>Il Mheg - Aglaope</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg0" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg1" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg4" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg5" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg6" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg7" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg8" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg9" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg10" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg11" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg12" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg13" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg14" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg15" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="mheg16" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/sh/mheg.jpg" class="zone w1024">
+	</div>
+	<div id="tarchia" class="zonecnt w1024">
+	<h2>Ahm Araeng - Tarchia</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm0" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm1" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm4" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm5" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm6" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm7" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm8" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm9" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm10" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm11" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm12" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm13" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm14" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm15" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ahm16" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/sh/ahm.jpg" class="zone w1024">
+	</div>
+	<div id="theazimsteppe" class="zonecnt w1024">
+	<h2>The Azim Steppe - Orghana</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim0" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim1" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim4" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim5" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim6" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim7" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim8" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim9" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim10" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim11" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim12" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim13" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim14" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim15" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim16" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="azim17" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/sb/azim.jpg" class="zone w1024">
+	</div>
+	<div id="yanxia" class="zonecnt w1024">
+	<h2>Yanxia - Gamma</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="yanxia0" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="yanxia1" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="yanxia2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="yanxia3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="yanxia4" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="yanxia5" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="yanxia6" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/sb/yanxia.jpg" class="zone w1024">
+	</div>
+	<div id="coerthaswesternhighlands" class="zonecnt w1024">
+	<h2>Coerthas Western Highlands - Kaiser Behemoth</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh0" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh1" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh4" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh5" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh6" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh7" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh8" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh9" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh10" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh11" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh12" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh13" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh14" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh15" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh16" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="cwh17" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/hw/cwh.jpg" class="zone w1024">
+	</div>
+	<div id="upperlanoscea" class="zonecnt w1024">
+	<h2>Upper La Noscea - Nandi</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln0" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln1" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln4" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln5" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln6" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln7" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln8" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln9" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln10" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln11" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln12" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln13" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln14" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln15" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="uln16" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/arr/uln.jpg" class="zone w1024">
+	</div>
+	<div id="centralthanalan" class="zonecnt w1024">
+	<h2>Central Thanalan - Brontes</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct0" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct1" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct4" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct5" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct6" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct7" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct8" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct9" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct10" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct11" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct12" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct13" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct14" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct15" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct16" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct17" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct18" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct19" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct20" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct21" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ct22" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/arr/ct.jpg" class="zone w1024">
+	</div>
+	<div id="lowerlanoscea" class="zonecnt w1024">
+	<h2>Lower La Noscea - Croakadile</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln0" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln1" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln4" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln5" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln6" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln7" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln8" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln9" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln10" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln11" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln12" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln13" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln14" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln15" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln16" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln17" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln18" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="lln19" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/arr/lln.jpg" class="zone w1024">
+	</div>
+	<div id="southshroud" class="zonecnt w1024">
+	<h2>South Shroud - Mindflayer</h2>
+		<div class="mol w1024">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss0" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss1" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss2" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss3" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss4" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss5" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss6" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss7" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss8" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss9" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss10" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss11" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss12" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss13" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss14" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss15" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss16" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss17" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss18" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss19" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss20" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss21" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss22" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss23" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss24" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss25" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss26" onclick="toggle()">
+			<img src="../ffxiv/images/offcircle.png" class="mark" id="ss27" onclick="toggle()">
+		</div>
+		<img src="../ffxiv/images/arr/ss.jpg" class="zone w1024">
+	</div>
+	<div>
+		<img src="../ffxiv/images/offcircle.png" class="hidden" id="offc">
+		<img src="../ffxiv/images/on1circle.png" class="hidden" id="on1c">
+		<img src="../ffxiv/images/on2circle.png" class="hidden" id="on2c">
+	</div>
+	<div id="copytoast">Copied!</div>
+</body>
+	<?php 
+	if (isset($_GET["m"])) {
+		$code = $_GET["m"];
+	} else {
+		$code = "6------------";
+	}
+	echo "<script>";
+	echo "window.onload = codeimport('" . $code . "');";
+	echo "</script>";
+	?>
+</html>

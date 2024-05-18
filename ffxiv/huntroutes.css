@@ -27,6 +27,10 @@ margin-block-start: 0.1em;
 margin-block-end: 0.25em;
 }
 
+.routeflex {
+display:flexbox
+}
+
 .routecnt {
 position: static;
 }

@@ -942,7 +942,7 @@ function sharemarks5() {
   switch (arrayai.search(2)) {case -1: sh9 = "-"; break; case 0: sh9 = "A"; break;case 1: sh9 = "B"; break;case 2: sh9 = "C"; break;case 3: sh9 = "D"; break;case 4: sh9 = "E"; break;case 5: sh9 = "F"; break;case 6: sh9 = "G"; break;case 7: sh9 = "H"; break;case 8: sh9 = "I"; break;case 9: sh9 = "J"; break;case 10: sh9 = "K"; break;case 11: sh9 = "L"; break;case 12: sh9 = "M"; break;case 13: sh9 = "N"; break;case 14: sh9 = "O"; break;}
   switch (arrayaj.search(1)) {case -1: sh10 = "-"; break; case 0: sh10 = "A"; break;case 1: sh10 = "B"; break;case 2: sh10 = "C"; break;case 3: sh10 = "D"; break;case 4: sh10 = "E"; break;case 5: sh10 = "F"; break;case 6: sh10 = "G"; break;case 7: sh10 = "H"; break;case 8: sh10 = "I"; break;case 9: sh10 = "J"; break;case 10: sh10 = "K"; break;case 11: sh10 = "L"; break;case 12: sh10 = "M"; break;case 13: sh10 = "N"; break;case 14: sh10 = "O"; break;case 15: sh10 = "P"; break;case 16: sh10 = "Q"; break;}
   switch (arrayaj.search(2)) {case -1: sh11 = "-"; break; case 0: sh11 = "A"; break;case 1: sh11 = "B"; break;case 2: sh11 = "C"; break;case 3: sh11 = "D"; break;case 4: sh11 = "E"; break;case 5: sh11 = "F"; break;case 6: sh11 = "G"; break;case 7: sh11 = "H"; break;case 8: sh11 = "I"; break;case 9: sh11 = "J"; break;case 10: sh11 = "K"; break;case 11: sh11 = "L"; break;case 12: sh11 = "M"; break;case 13: sh11 = "N"; break;case 14: sh11 = "O"; break;case 15: sh11 = "P"; break;case 16: sh11 = "Q"; break;}
-  document.getElementById("sharemarks5").value = "https://www.retahgaming.com/ffxiv/hunttraintool.php?m="+[exp,sh0,sh1,sh2,sh3,sh4,sh5,sh6,sh7,sh8,sh9,sh10,sh11].join("");
+  document.getElementById("sharemarks5").value = "https://www.retahgaming.com/ffxiv/hunttraintool.html?m="+[exp,sh0,sh1,sh2,sh3,sh4,sh5,sh6,sh7,sh8,sh9,sh10,sh11].join("");
 }
 
 function sharemarks6() {
@@ -1086,7 +1086,7 @@ function sharemarks6() {
   switch (arrayao.search(2)) {case -1: sh9 = "-"; break; case 0: sh9 = "A"; break;case 1: sh9 = "B"; break;case 2: sh9 = "C"; break;case 3: sh9 = "D"; break;case 4: sh9 = "E"; break;case 5: sh9 = "F"; break;case 6: sh9 = "G"; break;case 7: sh9 = "H"; break;case 8: sh9 = "I"; break;case 9: sh9 = "J"; break;case 10: sh9 = "K"; break;}
   switch (arrayap.search(1)) {case -1: sh10 = "-"; break; case 0: sh10 = "A"; break;case 1: sh10 = "B"; break;case 2: sh10 = "C"; break;case 3: sh10 = "D"; break;case 4: sh10 = "E"; break;case 5: sh10 = "F"; break;case 6: sh10 = "G"; break;case 7: sh10 = "H"; break;case 8: sh10 = "I"; break;}
   switch (arrayap.search(2)) {case -1: sh11 = "-"; break; case 0: sh11 = "A"; break;case 1: sh11 = "B"; break;case 2: sh11 = "C"; break;case 3: sh11 = "D"; break;case 4: sh11 = "E"; break;case 5: sh11 = "F"; break;case 6: sh11 = "G"; break;case 7: sh11 = "H"; break;case 8: sh11 = "I"; break;}
-  document.getElementById("sharemarks6").value = "https://www.retahgaming.com/ffxiv/hunttraintool.php?m="+[exp,sh0,sh1,sh2,sh3,sh4,sh5,sh6,sh7,sh8,sh9,sh10,sh11].join("");
+  document.getElementById("sharemarks6").value = "https://www.retahgaming.com/ffxiv/hunttraintool.html?m="+[exp,sh0,sh1,sh2,sh3,sh4,sh5,sh6,sh7,sh8,sh9,sh10,sh11].join("");
 }
 
 function codeimport(load){

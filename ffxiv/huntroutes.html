@@ -1,69 +1,118 @@
 <html>
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FFXIV Hunt Routes</title>
-		<?php include "../include/rginclude.html";?>
-<link rel="stylesheet" type="text/css" href="huntroutes.css?version=9">
+	<link rel="stylesheet" type="text/css" href="../rg.css?version=m1">
+	<script src="../rg.JS?version=m1" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="huntroutes.css?version=m1">
 
 </head>
+
 <body>
-<?php include "../include/topnav.html";?>
-<div id="rgcontent">
-	<h1>Hunt Train Scouting Routes</h1>
-	<div class="routecnt">
-		<h2>Lakeland</h2>
-		<h3>Average scout time: 4:20</h3>
-		<div class="mapcnt">
-			<img class="hunt_icons" src="images/sh/lakelandicons.png">
-			<img class="hunt_route" src="images/sh/lakelandroute.png">
-			<img class="hunt_map" src="images/sh/lakeland.jpg">
+	<div class="sticky">
+		<div class="topnav" id="rgTopnav">
+			<a class="home" href="../index.html">Home</a>
+			<div class="topnavdropdown">
+				<button class="topnavdropbtn">FFXIV &#x25BE</button>
+				<div class="topnavdropdown-content">
+					<a href="../ffxiv/bluemage.html">Blue Mage</a>
+					<a href="../ffxiv/treasuremaps.html">Treasure Maps</a>
+					<a href="../ffxiv/workshop.html">Workshop</a>
+					<a href="../ffxiv/diademmap.html">Diadem Map</a>
+					<a href="../ffxiv/bozja.html">Bozja</a>
+					<a href="../ffxiv/crafting.html">Crafting</a>
+					<a href="../ffxiv/gathering.html">Gathering</a>
+				</div>
+			</div>
+			<div class="topnavdropdown">
+				<button class="topnavdropbtn">FFXIV Hunt &#x25BE</button>
+				<div class="topnavdropdown-content">
+					<a href="../ffxiv/huntmarks.html">Hunt Marks</a>
+					<a href="../ffxiv/huntmaps.html">Hunt Maps</a>
+					<a href="../ffxiv/hunttraintool.html">Hunt Train Tool</a>
+					<a href="../ffxiv/huntroutes.html">Hunt Routes</a>
+					<a href="../ffxiv/huntmacros.html">Hunt Macros</a>
+				</div>
+			</div>
+			<div class="topnavdropdown topnavdropdown2">
+				<button class="topnavdropbtn">Donate &#x25BE</button>
+				<div class="topnavdropdown-content">
+					<a href="https://ko-fi.com/mayavelle">Ko-fi</a>
+					<a href="https://ko-fi.com/throne">Throne</a>
+				</div>
+			</div>
+			<div class="topnavdropdown topnavdropdown2">
+				<button class="topnavdropbtn">Socials &#x25BE</button>
+				<div class="topnavdropdown-content">
+					<a href="https://discord.gg/aT3DkDn7FM">Discord</a>
+					<a href="https://twitter.com/mayavelle">Twitter</a>
+					<a href="https://www.youtube.com/@mayavelle">Youtube</a>
+					<a href="https://www.twitch.tv/mayavelle">Twitch</a>
+				</div>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="rgTopnav()">&#9776;</a>
 		</div>
 	</div>
-	<div class="routecnt">
-		<h2>Kholusia</h2>
-		<h3>Average scout time: 4:10</h3>
-		<div class="mapcnt">
-			<img class="hunt_icons" src="images/sh/kholusiaicons.png">
-			<img class="hunt_route" src="images/sh/kholusiaroute.png">
-			<img class="hunt_map" src="images/sh/kholusia.jpg">
+	<div id="rgcontent">
+		<h1>Hunt Train Scouting Routes</h1>
+		<div class="routeflex">
+			<div class="routecnt">
+				<h2>Lakeland</h2>
+				<h3>Average scout time: 4:20</h3>
+				<div class="mapcnt">
+					<img class="hunt_icons" src="images/sh/lakelandicons.png">
+					<img class="hunt_route" src="images/sh/lakelandroute.png">
+					<img class="hunt_map" src="images/sh/lakeland.jpg">
+				</div>
+			</div>
+			<div class="routecnt">
+				<h2>Kholusia</h2>
+				<h3>Average scout time: 4:10</h3>
+				<div class="mapcnt">
+					<img class="hunt_icons" src="images/sh/kholusiaicons.png">
+					<img class="hunt_route" src="images/sh/kholusiaroute.png">
+					<img class="hunt_map" src="images/sh/kholusia.jpg">
+				</div>
+			</div>
+			<div class="routecnt">
+				<h2>Ahm Araeng</h2>
+				<h3>Average scout time: 3:50</h3>
+				<div class="mapcnt">
+					<img class="hunt_icons" src="images/sh/ahmicons.png">
+					<img class="hunt_route" src="images/sh/ahmroute.png">
+					<img class="hunt_map" src="images/sh/ahm.jpg">
+				</div>
+			</div>
+			<div class="routecnt">
+				<h2>Il Mheg</h2>
+				<h3>Average scout time: 4:00</h3>
+				<div class="mapcnt">
+					<img class="hunt_icons" src="images/sh/mhegicons.png">
+					<img class="hunt_route" src="images/sh/mhegroute.png">
+					<img class="hunt_map" src="images/sh/mheg.jpg">
+				</div>
+			</div>
+			<div class="routecnt">
+				<h2>The Rak'tika Greatwood</h2>
+				<h3>Average scout time: 3:25</h3>
+				<div class="mapcnt">
+					<img class="hunt_icons" src="images/sh/greatwoodicons.png">
+					<img class="hunt_route" src="images/sh/greatwoodroute.png">
+					<img class="hunt_map" src="images/sh/greatwood.jpg">
+				</div>
+			</div>
+			<div class="routecnt">
+				<h2>The Tempest</h2>
+				<h3>Average scout time: 4:05</h3>
+				<div class="mapcnt">
+					<img class="hunt_icons" src="images/sh/tempesticons.png">
+					<img class="hunt_route" src="images/sh/tempestroute.png">
+					<img class="hunt_map" src="images/sh/tempest.jpg">
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="routecnt">
-		<h2>Ahm Araeng</h2>
-		<h3>Average scout time: 3:50</h3>
-		<div class="mapcnt">
-			<img class="hunt_icons" src="images/sh/ahmicons.png">
-			<img class="hunt_route" src="images/sh/ahmroute.png">
-			<img class="hunt_map" src="images/sh/ahm.jpg">
-		</div>
-	</div>
-	<div class="routecnt">
-		<h2>Il Mheg</h2>
-		<h3>Average scout time: 4:00</h3>
-		<div class="mapcnt">
-			<img class="hunt_icons" src="images/sh/mhegicons.png">
-			<img class="hunt_route" src="images/sh/mhegroute.png">
-			<img class="hunt_map" src="images/sh/mheg.jpg">
-		</div>
-	</div>
-	<div class="routecnt">
-		<h2>The Rak'tika Greatwood</h2>
-		<h3>Average scout time: 3:25</h3>
-		<div class="mapcnt">
-			<img class="hunt_icons" src="images/sh/greatwoodicons.png">
-			<img class="hunt_route" src="images/sh/greatwoodroute.png">
-			<img class="hunt_map" src="images/sh/greatwood.jpg">
-		</div>
-	</div>
-	<div class="routecnt">
-		<h2>The Tempest</h2>
-		<h3>Average scout time: 4:05</h3>
-		<div class="mapcnt">
-			<img class="hunt_icons" src="images/sh/tempesticons.png">
-			<img class="hunt_route" src="images/sh/tempestroute.png">
-			<img class="hunt_map" src="images/sh/tempest.jpg">
-		</div>
-	</div>
-</div>
 </body>
+
 </html>
